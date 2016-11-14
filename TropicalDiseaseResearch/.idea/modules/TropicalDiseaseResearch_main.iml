@@ -10,5 +10,29 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.guava:guava:15.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.alibaba:fastjson:1.1.41" level="project" />
+    <orderEntry type="library" name="Gradle: mysql:mysql-connector-java:5.1.26" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-context:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-jdbc:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-web:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-test:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-webmvc:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-jsp:8.1.14.v20131031" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-aop:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-core:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-tx:4.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.orbit:javax.servlet.jsp:2.2.0.v201112011158" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.orbit:org.apache.jasper.glassfish:2.2.2.v201112011158" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.orbit:javax.servlet.jsp.jstl:1.2.0.v201105211821" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.orbit:org.apache.taglibs.standard.glassfish:1.2.0.v201112081803" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.orbit:javax.el:2.2.0.v201108011116" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.orbit:com.sun.el:2.2.0.v201108011116" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.orbit:org.eclipse.jdt.core:3.7.1" level="project" />
+    <orderEntry type="library" name="Gradle: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016" level="project" />
   </component>
 </module>
