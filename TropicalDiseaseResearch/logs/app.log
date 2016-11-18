@@ -10327,3 +10327,5 @@ Caused by: java.io.FileNotFoundException: Could not open ServletContext resource
 111817:49:33.413 [qtp1860944798-16] DEBUG ChannelEndPoint - close SCEP@2cf55663{l(/127.0.0.1:60136)<->r(/127.0.0.1:8081),s=1,open=true,ishut=true,oshut=false,rb=false,wb=false,w=true,i=1r}-{AsyncHttpConnection@427e7e83,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=0,l=0,c=-3},r=1}
 111817:49:33.415 [qtp1860944798-13 Selector0] DEBUG nio - destroyEndPoint SCEP@2cf55663{l(null)<->r(0.0.0.0/0.0.0.0:8081),s=0,open=false,ishut=true,oshut=true,rb=false,wb=false,w=true,i=1!}-{AsyncHttpConnection@427e7e83,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=0,l=0,c=-3},r=1}
 111817:49:33.415 [qtp1860944798-13 Selector0] DEBUG AbstractHttpConnection - closed AsyncHttpConnection@427e7e83,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=0,l=0,c=-3},r=1
+111817:49:53.513 [main] DEBUG log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog
+111817:51:42.267 [main] DEBUG log - Logging to Logger[org.eclipse.jetty.util.log] via org.eclipse.jetty.util.log.Slf4jLog

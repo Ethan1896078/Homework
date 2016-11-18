@@ -47,7 +47,7 @@ public class ArticleController {
      * @param response
      * @return
      */
-    @RequestMapping(value = UrlConstants.get_article_list, method = RequestMethod.GET)
+    @RequestMapping(value = UrlConstants.get_article_list, method = RequestMethod.POST)
     public ModelAndView getArticleList(HttpServletRequest request, HttpServletResponse response){
         logger.info("get article list begin.");
         List<Article> articleList = articleService.getArticleList();
@@ -55,5 +55,26 @@ public class ArticleController {
         ModelAndView mv = new ModelAndView("article/list");
         mv.addObject("articleList", articleList);
         return mv;
+    }
+
+    /**
+     * 修改文章
+     * @param request
+     * @param response
+     * @param article
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = UrlConstants.modify_article, method = RequestMethod.POST)
+    public int modifyArticle(HttpServletRequest request, HttpServletResponse response, Article article){
+        int result = articleService.modifyArticle(article);
+        return result;
+    }
+
+    @ResponseBody
+    @RequestMapping(value = UrlConstants.remove_article, method = RequestMethod.POST)
+    public int removeArticle(HttpServletRequest request, HttpServletResponse response, Integer articleId){
+        int result = articleService.removeArticle(articleId);
+        return result;
     }
 }

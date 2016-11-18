@@ -38,4 +38,11 @@ public class ArticleService {
     public int addArticle(Article article) {
         return articleDao.addArticle(article);
     }
+
+    public int modifyArticle(Article article) {
+        return articleDao.modifyArticle(article);
+    }
+
+    public int removeArticle(Integer articleId) {
+    }
 }

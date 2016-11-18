@@ -1,5 +1,5 @@
 def SpringVersion = '4.0.1.RELEASE'
-def JettyVersion = '8.1.14.v20131031'
+def JettyVersion = '9.3.11.v20160721'
 
 group 'team.t9001.saad'
 version '1.0-SNAPSHOT'
