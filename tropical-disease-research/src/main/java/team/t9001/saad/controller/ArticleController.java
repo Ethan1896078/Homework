@@ -1,5 +1,6 @@
 package team.t9001.saad.controller;
 
+import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import team.t9001.saad.common.Page;
 import team.t9001.saad.common.UrlConstants;
 import team.t9001.saad.model.Article;
 import team.t9001.saad.service.ArticleService;
@@ -15,6 +17,7 @@ import team.t9001.saad.service.ArticleService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
+import java.util.Map;
 
 /**
  * desc:
@@ -44,17 +47,17 @@ public class ArticleController {
 
     /**
      * 获取文章列表
-     * @param request
-     * @param response
+     * @param page
+     * @param resultMap
      * @return
      */
     @RequestMapping(value = UrlConstants.get_article_list, method = RequestMethod.GET)
-    public ModelAndView getArticleList(HttpServletRequest request, HttpServletResponse response){
-        logger.info("get article list begin.");
+    public ModelAndView getArticleList(Page page, Map<String, Object> resultMap){
         List<Article> articleList = articleService.getArticleList();
+        logger.info("article list: {}", JSON.toJSONString(articleList));
 
         ModelAndView mv = new ModelAndView("article/list");
-        mv.addObject("articleList", articleList);
+        mv.addObject("list", articleList);
         return mv;
     }
 

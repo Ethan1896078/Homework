@@ -4,3 +4,175 @@
 111903:17:25.460 [qtp448569108-24] INFO  MainController - !!!!!!!1
 111903:37:22.078 [qtp1779090574-24] INFO  MainController - !!!!!!!1
 111903:38:13.607 [qtp1779090574-22] INFO  MainController - !!!!!!!1
+111903:48:50.515 [qtp1535454025-21] ERROR DruidDataSource - dataSource init error
+java.sql.SQLException: com.mysql.jdbc.Driver
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:520) ~[druid-1.0.9.jar:1.0.9]
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:583) [druid-1.0.9.jar:1.0.9]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:915) [druid-1.0.9.jar:1.0.9]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:911) [druid-1.0.9.jar:1.0.9]
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:98) [druid-1.0.9.jar:1.0.9]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111) [spring-jdbc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77) [spring-jdbc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:382) [spring-jdbc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:456) [spring-jdbc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:464) [spring-jdbc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at team.t9001.saad.dao.ArticleDao.getArticleList(ArticleDao.java:37) [classes/:na]
+	at team.t9001.saad.service.ArticleService.getArticleList(ArticleService.java:29) [classes/:na]
+	at team.t9001.saad.controller.ArticleController.getArticleList(ArticleController.java:54) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_40]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_40]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_40]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_40]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:219) [spring-web-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132) [spring-web-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104) [spring-webmvc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:745) [spring-webmvc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:686) [spring-webmvc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:80) [spring-webmvc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925) [spring-webmvc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856) [spring-webmvc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953) [spring-webmvc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:844) [spring-webmvc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:735) [javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829) [spring-webmvc-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) [javax.servlet-3.0.0.v201112011016.jar:na]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684) [jetty-servlet-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496) [jetty-servlet-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88) [spring-web-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-3.2.7.RELEASE.jar:3.2.7.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476) [jetty-servlet-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:499) [jetty-servlet-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557) [jetty-security-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:428) [jetty-servlet-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.Server.handle(Server.java:370) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:971) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1033) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644) [jetty-http-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) [jetty-http-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82) [jetty-server-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667) [jetty-io-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52) [jetty-io-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) [jetty-util-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) [jetty-util-8.1.14.v20131031.jar:8.1.14.v20131031]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_40]
+Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:50) ~[na:na]
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:244) ~[na:na]
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:230) ~[na:na]
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430) ~[na:na]
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383) ~[na:na]
+	at java.lang.Class.forName0(Native Method) ~[na:1.8.0_40]
+	at java.lang.Class.forName(Class.java:264) ~[na:1.8.0_40]
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:518) ~[druid-1.0.9.jar:1.0.9]
+	... 58 common frames omitted
+111903:48:50.528 [qtp1535454025-21] INFO  DruidDataSource - {dataSource-1} inited
+111903:52:29.109 [qtp895705623-20] DEBUG Connection - {conn-10001} connected
+111903:52:29.148 [qtp895705623-20] DEBUG Connection - {conn-10002} connected
+111903:52:29.194 [qtp895705623-20] DEBUG Connection - {conn-10003} connected
+111903:52:29.230 [qtp895705623-20] DEBUG Connection - {conn-10004} connected
+111903:52:29.257 [qtp895705623-20] INFO  DruidDataSource - {dataSource-1} inited
+111903:52:29.268 [qtp895705623-20] DEBUG Connection - {conn-10004} pool-connect
+111903:52:29.273 [qtp895705623-20] DEBUG Statement - {conn-10004, stmt-20000} created
+111903:52:29.550 [qtp895705623-20] DEBUG Statement - {conn-10004, stmt-20000, rs-50000} query executed. 31.561947 millis. SELECT * FROM t_article
+111903:52:29.551 [qtp895705623-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} open
+111903:52:29.555 [qtp895705623-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Header: [article_id, title, author, publish_time, external_link, status, create_time, update_time]
+111903:52:29.571 [qtp895705623-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [2, 百度一下，你就知道, 李彦宏, 2000-01-01, www.baidu.com, true, 2016-11-17 22:35:42.0, 2016-11-17 22:35:42.0]
+111903:52:29.573 [qtp895705623-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [3, hello, kugou, 谢振宇, 2004-01-01, http://www.kugou.com, true, 2016-11-18 00:25:39.0, 2016-11-18 00:25:39.0]
+111903:52:29.573 [qtp895705623-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [6, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 00:49:13.0, 2016-11-18 00:49:13.0]
+111903:52:29.574 [qtp895705623-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [7, ???, ??, 2005-12-12, www.taobao.com, false, 2016-11-18 00:51:04.0, 2016-11-18 00:51:04.0]
+111903:52:29.575 [qtp895705623-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [8, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 01:00:53.0, 2016-11-18 01:00:53.0]
+111903:52:29.579 [qtp895705623-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} closed
+111903:52:29.580 [qtp895705623-20] DEBUG Statement - {conn-10004, stmt-20000} closed
+111903:52:29.581 [qtp895705623-20] DEBUG Connection - {conn-10004} pool-recycle
+111903:52:30.531 [qtp895705623-20] INFO  ArticleService - [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111903:52:30.532 [qtp895705623-20] INFO  ArticleController - article list: [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111904:17:49.824 [qtp650859015-23] DEBUG Connection - {conn-10001} connected
+111904:17:49.852 [qtp650859015-23] DEBUG Connection - {conn-10002} connected
+111904:17:49.874 [qtp650859015-23] DEBUG Connection - {conn-10003} connected
+111904:17:49.891 [qtp650859015-23] DEBUG Connection - {conn-10004} connected
+111904:17:49.901 [qtp650859015-23] INFO  DruidDataSource - {dataSource-1} inited
+111904:17:49.908 [qtp650859015-23] DEBUG Connection - {conn-10004} pool-connect
+111904:17:49.910 [qtp650859015-23] DEBUG Statement - {conn-10004, stmt-20000} created
+111904:17:50.000 [qtp650859015-23] DEBUG Statement - {conn-10004, stmt-20000, rs-50000} query executed. 14.156117 millis. SELECT * FROM t_article
+111904:17:50.000 [qtp650859015-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} open
+111904:17:50.002 [qtp650859015-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Header: [article_id, title, author, publish_time, external_link, status, create_time, update_time]
+111904:17:50.012 [qtp650859015-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [2, 百度一下，你就知道, 李彦宏, 2000-01-01, www.baidu.com, true, 2016-11-17 22:35:42.0, 2016-11-17 22:35:42.0]
+111904:17:50.013 [qtp650859015-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [3, hello, kugou, 谢振宇, 2004-01-01, http://www.kugou.com, true, 2016-11-18 00:25:39.0, 2016-11-18 00:25:39.0]
+111904:17:50.013 [qtp650859015-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [6, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 00:49:13.0, 2016-11-18 00:49:13.0]
+111904:17:50.017 [qtp650859015-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [7, ???, ??, 2005-12-12, www.taobao.com, false, 2016-11-18 00:51:04.0, 2016-11-18 00:51:04.0]
+111904:17:50.017 [qtp650859015-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [8, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 01:00:53.0, 2016-11-18 01:00:53.0]
+111904:17:50.020 [qtp650859015-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} closed
+111904:17:50.020 [qtp650859015-23] DEBUG Statement - {conn-10004, stmt-20000} closed
+111904:17:50.021 [qtp650859015-23] DEBUG Connection - {conn-10004} pool-recycle
+111904:17:50.500 [qtp650859015-23] INFO  ArticleService - [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111904:17:50.501 [qtp650859015-23] INFO  ArticleController - article list: [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111904:23:08.574 [qtp357153703-20] DEBUG Connection - {conn-10001} connected
+111904:23:08.594 [qtp357153703-20] DEBUG Connection - {conn-10002} connected
+111904:23:08.611 [qtp357153703-20] DEBUG Connection - {conn-10003} connected
+111904:23:08.628 [qtp357153703-20] DEBUG Connection - {conn-10004} connected
+111904:23:08.637 [qtp357153703-20] INFO  DruidDataSource - {dataSource-1} inited
+111904:23:08.643 [qtp357153703-20] DEBUG Connection - {conn-10004} pool-connect
+111904:23:08.645 [qtp357153703-20] DEBUG Statement - {conn-10004, stmt-20000} created
+111904:23:08.716 [qtp357153703-20] DEBUG Statement - {conn-10004, stmt-20000, rs-50000} query executed. 9.291923 millis. SELECT * FROM t_article
+111904:23:08.716 [qtp357153703-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} open
+111904:23:08.718 [qtp357153703-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Header: [article_id, title, author, publish_time, external_link, status, create_time, update_time]
+111904:23:08.726 [qtp357153703-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [2, 百度一下，你就知道, 李彦宏, 2000-01-01, www.baidu.com, true, 2016-11-17 22:35:42.0, 2016-11-17 22:35:42.0]
+111904:23:08.727 [qtp357153703-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [3, hello, kugou, 谢振宇, 2004-01-01, http://www.kugou.com, true, 2016-11-18 00:25:39.0, 2016-11-18 00:25:39.0]
+111904:23:08.727 [qtp357153703-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [6, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 00:49:13.0, 2016-11-18 00:49:13.0]
+111904:23:08.728 [qtp357153703-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [7, ???, ??, 2005-12-12, www.taobao.com, false, 2016-11-18 00:51:04.0, 2016-11-18 00:51:04.0]
+111904:23:08.728 [qtp357153703-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [8, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 01:00:53.0, 2016-11-18 01:00:53.0]
+111904:23:08.730 [qtp357153703-20] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} closed
+111904:23:08.731 [qtp357153703-20] DEBUG Statement - {conn-10004, stmt-20000} closed
+111904:23:08.731 [qtp357153703-20] DEBUG Connection - {conn-10004} pool-recycle
+111904:23:09.181 [qtp357153703-20] INFO  ArticleService - [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111904:23:09.181 [qtp357153703-20] INFO  ArticleController - article list: [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111904:24:31.543 [qtp895705623-23] DEBUG Connection - {conn-10001} connected
+111904:24:31.565 [qtp895705623-23] DEBUG Connection - {conn-10002} connected
+111904:24:31.580 [qtp895705623-23] DEBUG Connection - {conn-10003} connected
+111904:24:31.598 [qtp895705623-23] DEBUG Connection - {conn-10004} connected
+111904:24:31.609 [qtp895705623-23] INFO  DruidDataSource - {dataSource-1} inited
+111904:24:31.616 [qtp895705623-23] DEBUG Connection - {conn-10004} pool-connect
+111904:24:31.619 [qtp895705623-23] DEBUG Statement - {conn-10004, stmt-20000} created
+111904:24:31.694 [qtp895705623-23] DEBUG Statement - {conn-10004, stmt-20000, rs-50000} query executed. 8.537953 millis. SELECT * FROM t_article
+111904:24:31.695 [qtp895705623-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} open
+111904:24:31.697 [qtp895705623-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Header: [article_id, title, author, publish_time, external_link, status, create_time, update_time]
+111904:24:31.706 [qtp895705623-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [2, 百度一下，你就知道, 李彦宏, 2000-01-01, www.baidu.com, true, 2016-11-17 22:35:42.0, 2016-11-17 22:35:42.0]
+111904:24:31.706 [qtp895705623-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [3, hello, kugou, 谢振宇, 2004-01-01, http://www.kugou.com, true, 2016-11-18 00:25:39.0, 2016-11-18 00:25:39.0]
+111904:24:31.707 [qtp895705623-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [6, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 00:49:13.0, 2016-11-18 00:49:13.0]
+111904:24:31.707 [qtp895705623-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [7, ???, ??, 2005-12-12, www.taobao.com, false, 2016-11-18 00:51:04.0, 2016-11-18 00:51:04.0]
+111904:24:31.707 [qtp895705623-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [8, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 01:00:53.0, 2016-11-18 01:00:53.0]
+111904:24:31.709 [qtp895705623-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} closed
+111904:24:31.710 [qtp895705623-23] DEBUG Statement - {conn-10004, stmt-20000} closed
+111904:24:31.710 [qtp895705623-23] DEBUG Connection - {conn-10004} pool-recycle
+111904:24:32.124 [qtp895705623-23] INFO  ArticleService - [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111904:24:32.124 [qtp895705623-23] INFO  ArticleController - article list: [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111904:25:51.269 [qtp357153703-23] DEBUG Connection - {conn-10001} connected
+111904:25:51.299 [qtp357153703-23] DEBUG Connection - {conn-10002} connected
+111904:25:51.319 [qtp357153703-23] DEBUG Connection - {conn-10003} connected
+111904:25:51.331 [qtp357153703-23] DEBUG Connection - {conn-10004} connected
+111904:25:51.346 [qtp357153703-23] INFO  DruidDataSource - {dataSource-1} inited
+111904:25:51.353 [qtp357153703-23] DEBUG Connection - {conn-10004} pool-connect
+111904:25:51.356 [qtp357153703-23] DEBUG Statement - {conn-10004, stmt-20000} created
+111904:25:51.436 [qtp357153703-23] DEBUG Statement - {conn-10004, stmt-20000, rs-50000} query executed. 9.188579 millis. SELECT * FROM t_article
+111904:25:51.436 [qtp357153703-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} open
+111904:25:51.439 [qtp357153703-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Header: [article_id, title, author, publish_time, external_link, status, create_time, update_time]
+111904:25:51.447 [qtp357153703-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [2, 百度一下，你就知道, 李彦宏, 2000-01-01, www.baidu.com, true, 2016-11-17 22:35:42.0, 2016-11-17 22:35:42.0]
+111904:25:51.448 [qtp357153703-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [3, hello, kugou, 谢振宇, 2004-01-01, http://www.kugou.com, true, 2016-11-18 00:25:39.0, 2016-11-18 00:25:39.0]
+111904:25:51.448 [qtp357153703-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [6, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 00:49:13.0, 2016-11-18 00:49:13.0]
+111904:25:51.449 [qtp357153703-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [7, ???, ??, 2005-12-12, www.taobao.com, false, 2016-11-18 00:51:04.0, 2016-11-18 00:51:04.0]
+111904:25:51.449 [qtp357153703-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} Result: [8, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 01:00:53.0, 2016-11-18 01:00:53.0]
+111904:25:51.453 [qtp357153703-23] DEBUG ResultSet - {conn-10004, stmt-20000, rs-50000} closed
+111904:25:51.454 [qtp357153703-23] DEBUG Statement - {conn-10004, stmt-20000} closed
+111904:25:51.454 [qtp357153703-23] DEBUG Connection - {conn-10004} pool-recycle
+111904:25:51.860 [qtp357153703-23] INFO  ArticleService - [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111904:25:51.861 [qtp357153703-23] INFO  ArticleController - article list: [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
