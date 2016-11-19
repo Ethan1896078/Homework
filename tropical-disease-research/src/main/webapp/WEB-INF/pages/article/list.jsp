@@ -10,10 +10,15 @@
 <html lang="zh-CN">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>综合信息查询</title>
+  <title>发表文章</title>
   <script type="text/javascript" src="<%=basePath%>/js/jquery-1.7.1.js"></script>
 </head>
 <body>
+<h1>request status</h1>
+status = ${requestStatus.status}<br/>
+errorCode = ${requestStatus.errorCode}<br/>
+errorMsg = ${requestStatus.errorMsg}<br/>
+
 <h1>article list</h1>
 <div>
   <c:forEach items="${list}" var="item" varStatus="i">

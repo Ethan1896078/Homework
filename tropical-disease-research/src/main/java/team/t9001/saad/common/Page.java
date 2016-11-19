@@ -10,6 +10,10 @@ public class Page {
     private int currentPage;
     /** 总页数 */
     private int totalPage;
+    /** 总数 */
+    private int totalCount;
+    /** 每页数量 */
+    private int pageSize;
 
     public int getCurrentPage() {
         return currentPage;
@@ -42,10 +46,4 @@ public class Page {
     public void setPageSize(int pageSize) {
         this.pageSize = pageSize;
     }
-
-    /** 总数 */
-
-    private int totalCount;
-    /** 每页数量 */
-    private int pageSize;
 }

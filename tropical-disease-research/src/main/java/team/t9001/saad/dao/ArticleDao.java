@@ -2,6 +2,7 @@ package team.t9001.saad.dao;
 
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
+import team.t9001.saad.common.Page;
 import team.t9001.saad.model.Article;
 
 import java.sql.ResultSet;
@@ -32,9 +33,19 @@ public class ArticleDao extends BaseDao {
      * 获取文章列表
      * @return
      */
-    public List<Article> getArticleList() {
-        String sql = "SELECT * FROM t_article";
-        List<Article> articleList = jdbc.query(sql, articleMapper);
+    public List<Article> getArticleList(Page page) {
+        int pageSize = page.getPageSize();
+        int beginIndex = page.getCurrentPage() * pageSize;
+
+        String sql = "SELECT * FROM t_article LIMIT ?, ?";
+        List<Article> articleList = jdbc.query(sql, articleMapper, beginIndex, pageSize);
+
+        String countSql = "SELECT COUNT(0) FROM t_article";
+        int totalCount = jdbc.queryForObject(countSql, Integer.class);
+        int totalPage = totalCount / pageSize + (totalCount % pageSize > 0 ? 1 : 0);
+        page.setTotalCount(totalCount);
+        page.setTotalPage(totalPage);
+
         return articleList;
     }
 
@@ -59,5 +70,15 @@ public class ArticleDao extends BaseDao {
                 "WHERE article_id = ?";
         return jdbc.update(sql, article.getTitle(), article.getAuthor(), article.getPublishTime()
                 , article.getExternalLink(), article.getStatus(), article.getArticleId());
+    }
+
+    /**
+     * 删除文章
+     * @param articleId
+     * @return
+     */
+    public int removeArticle(Integer articleId) {
+        String sql = "DELETE FROM t_article WHERE articleId = ?";
+        return jdbc.update(sql, articleId);
     }
 }

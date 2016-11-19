@@ -176,3 +176,108 @@ Caused by: java.lang.ClassNotFoundException: com.mysql.jdbc.Driver
 111904:25:51.454 [qtp357153703-23] DEBUG Connection - {conn-10004} pool-recycle
 111904:25:51.860 [qtp357153703-23] INFO  ArticleService - [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
 111904:25:51.861 [qtp357153703-23] INFO  ArticleController - article list: [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"},{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111915:39:33.702 [qtp1594857799-19] WARN  Validator - input params error, page = {"currentPage":0,"pageSize":0,"totalCount":0,"totalPage":0}
+111915:40:19.190 [qtp1594857799-22] WARN  Validator - input params error, page = {"currentPage":0,"pageSize":0,"totalCount":0,"totalPage":0}
+111915:41:39.938 [qtp1594857799-22] DEBUG Connection - {conn-10001} connected
+111915:41:39.960 [qtp1594857799-22] DEBUG Connection - {conn-10002} connected
+111915:41:39.993 [qtp1594857799-22] DEBUG Connection - {conn-10003} connected
+111915:41:40.022 [qtp1594857799-22] DEBUG Connection - {conn-10004} connected
+111915:41:40.038 [qtp1594857799-22] INFO  DruidDataSource - {dataSource-1} inited
+111915:41:40.049 [qtp1594857799-22] DEBUG Connection - {conn-10004} pool-connect
+111915:41:40.180 [qtp1594857799-22] DEBUG Statement - {conn-10004, pstmt-20000} created. SELECT * FROM t_article LIMIT ?, ?
+111915:41:40.201 [qtp1594857799-22] DEBUG Statement - {conn-10004, pstmt-20000} Parameters : [0, 3]
+111915:41:40.202 [qtp1594857799-22] DEBUG Statement - {conn-10004, pstmt-20000} Types : [INTEGER, INTEGER]
+111915:41:40.206 [qtp1594857799-22] DEBUG Statement - {conn-10004, pstmt-20000, rs-50000} query executed. 8.979812 millis. SELECT * FROM t_article LIMIT ?, ?
+111915:41:40.206 [qtp1594857799-22] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} open
+111915:41:40.211 [qtp1594857799-22] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Header: [article_id, title, author, publish_time, external_link, status, create_time, update_time]
+111915:41:40.225 [qtp1594857799-22] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Result: [2, 百度一下，你就知道, 李彦宏, 2000-01-01, www.baidu.com, true, 2016-11-17 22:35:42.0, 2016-11-17 22:35:42.0]
+111915:41:40.227 [qtp1594857799-22] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Result: [3, hello, kugou, 谢振宇, 2004-01-01, http://www.kugou.com, true, 2016-11-18 00:25:39.0, 2016-11-18 00:25:39.0]
+111915:41:40.227 [qtp1594857799-22] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Result: [6, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 00:49:13.0, 2016-11-18 00:49:13.0]
+111915:41:40.236 [qtp1594857799-22] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} closed
+111915:41:40.238 [qtp1594857799-22] DEBUG Statement - {conn-10004, pstmt-20000} closed
+111915:41:40.243 [qtp1594857799-22] DEBUG Connection - {conn-10004} pool-recycle
+111915:41:40.248 [qtp1594857799-22] DEBUG Connection - {conn-10004} pool-connect
+111915:41:40.249 [qtp1594857799-22] DEBUG Statement - {conn-10004, stmt-20001} created
+111915:41:40.250 [qtp1594857799-22] DEBUG Statement - {conn-10004, stmt-20001, rs-50001} query executed. 0.737216 millis. SELECT * FROM t_article
+111915:41:40.250 [qtp1594857799-22] DEBUG ResultSet - {conn-10004, stmt-20001, rs-50001} open
+111915:41:40.250 [qtp1594857799-22] DEBUG ResultSet - {conn-10004, stmt-20001, rs-50001} Header: [article_id, title, author, publish_time, external_link, status, create_time, update_time]
+111915:41:40.251 [qtp1594857799-22] DEBUG ResultSet - {conn-10004, stmt-20001, rs-50001} Result: [2, 百度一下，你就知道, 李彦宏, 2000-01-01, www.baidu.com, true, 2016-11-17 22:35:42.0, 2016-11-17 22:35:42.0]
+111915:41:40.253 [qtp1594857799-22] DEBUG ResultSet - {conn-10004, stmt-20001, rs-50001} closed
+111915:41:40.254 [qtp1594857799-22] DEBUG Statement - {conn-10004, stmt-20001} closed
+111915:41:40.255 [qtp1594857799-22] DEBUG Connection - {conn-10004} pool-recycle
+111915:42:47.456 [qtp1665324560-24] DEBUG Connection - {conn-10001} connected
+111915:42:47.474 [qtp1665324560-24] DEBUG Connection - {conn-10002} connected
+111915:42:47.489 [qtp1665324560-24] DEBUG Connection - {conn-10003} connected
+111915:42:47.503 [qtp1665324560-24] DEBUG Connection - {conn-10004} connected
+111915:42:47.517 [qtp1665324560-24] INFO  DruidDataSource - {dataSource-1} inited
+111915:42:47.523 [qtp1665324560-24] DEBUG Connection - {conn-10004} pool-connect
+111915:42:47.611 [qtp1665324560-24] DEBUG Statement - {conn-10004, pstmt-20000} created. SELECT * FROM t_article LIMIT ?, ?
+111915:42:47.621 [qtp1665324560-24] DEBUG Statement - {conn-10004, pstmt-20000} Parameters : [0, 3]
+111915:42:47.621 [qtp1665324560-24] DEBUG Statement - {conn-10004, pstmt-20000} Types : [INTEGER, INTEGER]
+111915:42:47.628 [qtp1665324560-24] DEBUG Statement - {conn-10004, pstmt-20000, rs-50000} query executed. 8.371388 millis. SELECT * FROM t_article LIMIT ?, ?
+111915:42:47.628 [qtp1665324560-24] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} open
+111915:42:47.631 [qtp1665324560-24] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Header: [article_id, title, author, publish_time, external_link, status, create_time, update_time]
+111915:42:47.640 [qtp1665324560-24] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Result: [2, 百度一下，你就知道, 李彦宏, 2000-01-01, www.baidu.com, true, 2016-11-17 22:35:42.0, 2016-11-17 22:35:42.0]
+111915:42:47.641 [qtp1665324560-24] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Result: [3, hello, kugou, 谢振宇, 2004-01-01, http://www.kugou.com, true, 2016-11-18 00:25:39.0, 2016-11-18 00:25:39.0]
+111915:42:47.642 [qtp1665324560-24] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Result: [6, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 00:49:13.0, 2016-11-18 00:49:13.0]
+111915:42:47.645 [qtp1665324560-24] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} closed
+111915:42:47.645 [qtp1665324560-24] DEBUG Statement - {conn-10004, pstmt-20000} closed
+111915:42:47.646 [qtp1665324560-24] DEBUG Connection - {conn-10004} pool-recycle
+111915:42:47.649 [qtp1665324560-24] DEBUG Connection - {conn-10004} pool-connect
+111915:42:47.649 [qtp1665324560-24] DEBUG Statement - {conn-10004, stmt-20001} created
+111915:42:47.655 [qtp1665324560-24] DEBUG Statement - {conn-10004, stmt-20001, rs-50001} query executed. 0.998666 millis. SELECT COUNT(0) FROM t_article
+111915:42:47.656 [qtp1665324560-24] DEBUG ResultSet - {conn-10004, stmt-20001, rs-50001} open
+111915:42:47.656 [qtp1665324560-24] DEBUG ResultSet - {conn-10004, stmt-20001, rs-50001} Header: [COUNT(0)]
+111915:42:47.656 [qtp1665324560-24] DEBUG ResultSet - {conn-10004, stmt-20001, rs-50001} Result: [5]
+111915:42:47.657 [qtp1665324560-24] DEBUG ResultSet - {conn-10004, stmt-20001, rs-50001} closed
+111915:42:47.657 [qtp1665324560-24] DEBUG Statement - {conn-10004, stmt-20001} closed
+111915:42:47.657 [qtp1665324560-24] DEBUG Connection - {conn-10004} pool-recycle
+111915:42:48.091 [qtp1665324560-24] INFO  ArticleService - [{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111915:42:48.094 [qtp1665324560-24] INFO  ArticleController - get article list, page:{"currentPage":0,"pageSize":3,"totalCount":5,"totalPage":2}, data:[{"articleId":2,"author":"李彦宏","externalLink":"www.baidu.com","publishTime":"2000-01-01","status":1,"title":"百度一下，你就知道"},{"articleId":3,"author":"谢振宇","externalLink":"http://www.kugou.com","publishTime":"2004-01-01","status":1,"title":"hello, kugou"},{"articleId":6,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111915:43:02.199 [qtp1665324560-20] DEBUG Connection - {conn-10004} pool-connect
+111915:43:02.201 [qtp1665324560-20] DEBUG Statement - {conn-10004, pstmt-20002} created. SELECT * FROM t_article LIMIT ?, ?
+111915:43:02.201 [qtp1665324560-20] DEBUG Statement - {conn-10004, pstmt-20002} Parameters : [3, 3]
+111915:43:02.201 [qtp1665324560-20] DEBUG Statement - {conn-10004, pstmt-20002} Types : [INTEGER, INTEGER]
+111915:43:02.202 [qtp1665324560-20] DEBUG Statement - {conn-10004, pstmt-20002, rs-50002} query executed. 0.79974 millis. SELECT * FROM t_article LIMIT ?, ?
+111915:43:02.202 [qtp1665324560-20] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} open
+111915:43:02.202 [qtp1665324560-20] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} Header: [article_id, title, author, publish_time, external_link, status, create_time, update_time]
+111915:43:02.202 [qtp1665324560-20] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} Result: [7, ???, ??, 2005-12-12, www.taobao.com, false, 2016-11-18 00:51:04.0, 2016-11-18 00:51:04.0]
+111915:43:02.203 [qtp1665324560-20] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} Result: [8, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 01:00:53.0, 2016-11-18 01:00:53.0]
+111915:43:02.203 [qtp1665324560-20] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} closed
+111915:43:02.203 [qtp1665324560-20] DEBUG Statement - {conn-10004, pstmt-20002} closed
+111915:43:02.203 [qtp1665324560-20] DEBUG Connection - {conn-10004} pool-recycle
+111915:43:02.203 [qtp1665324560-20] DEBUG Connection - {conn-10004} pool-connect
+111915:43:02.203 [qtp1665324560-20] DEBUG Statement - {conn-10004, stmt-20003} created
+111915:43:02.204 [qtp1665324560-20] DEBUG Statement - {conn-10004, stmt-20003, rs-50003} query executed. 0.542399 millis. SELECT COUNT(0) FROM t_article
+111915:43:02.204 [qtp1665324560-20] DEBUG ResultSet - {conn-10004, stmt-20003, rs-50003} open
+111915:43:02.204 [qtp1665324560-20] DEBUG ResultSet - {conn-10004, stmt-20003, rs-50003} Header: [COUNT(0)]
+111915:43:02.205 [qtp1665324560-20] DEBUG ResultSet - {conn-10004, stmt-20003, rs-50003} Result: [5]
+111915:43:02.205 [qtp1665324560-20] DEBUG ResultSet - {conn-10004, stmt-20003, rs-50003} closed
+111915:43:02.205 [qtp1665324560-20] DEBUG Statement - {conn-10004, stmt-20003} closed
+111915:43:02.205 [qtp1665324560-20] DEBUG Connection - {conn-10004} pool-recycle
+111915:43:02.206 [qtp1665324560-20] INFO  ArticleService - [{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111915:43:02.206 [qtp1665324560-20] INFO  ArticleController - get article list, page:{"currentPage":1,"pageSize":3,"totalCount":5,"totalPage":2}, data:[{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111915:45:01.210 [qtp1665324560-21] DEBUG Connection - {conn-10004} pool-connect
+111915:45:01.210 [qtp1665324560-21] DEBUG Statement - {conn-10004, pstmt-20004} created. SELECT * FROM t_article LIMIT ?, ?
+111915:45:01.211 [qtp1665324560-21] DEBUG Statement - {conn-10004, pstmt-20004} Parameters : [3, 3]
+111915:45:01.211 [qtp1665324560-21] DEBUG Statement - {conn-10004, pstmt-20004} Types : [INTEGER, INTEGER]
+111915:45:01.212 [qtp1665324560-21] DEBUG Statement - {conn-10004, pstmt-20004, rs-50004} query executed. 1.095199 millis. SELECT * FROM t_article LIMIT ?, ?
+111915:45:01.212 [qtp1665324560-21] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50004} open
+111915:45:01.212 [qtp1665324560-21] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50004} Header: [article_id, title, author, publish_time, external_link, status, create_time, update_time]
+111915:45:01.213 [qtp1665324560-21] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50004} Result: [7, ???, ??, 2005-12-12, www.taobao.com, false, 2016-11-18 00:51:04.0, 2016-11-18 00:51:04.0]
+111915:45:01.214 [qtp1665324560-21] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50004} Result: [8, 买买买, 马云, 2005-12-12, www.taobao.com, false, 2016-11-18 01:00:53.0, 2016-11-18 01:00:53.0]
+111915:45:01.214 [qtp1665324560-21] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50004} closed
+111915:45:01.214 [qtp1665324560-21] DEBUG Statement - {conn-10004, pstmt-20004} closed
+111915:45:01.214 [qtp1665324560-21] DEBUG Connection - {conn-10004} pool-recycle
+111915:45:01.214 [qtp1665324560-21] DEBUG Connection - {conn-10004} pool-connect
+111915:45:01.215 [qtp1665324560-21] DEBUG Statement - {conn-10004, stmt-20005} created
+111915:45:01.217 [qtp1665324560-21] DEBUG Statement - {conn-10004, stmt-20005, rs-50005} query executed. 2.18315 millis. SELECT COUNT(0) FROM t_article
+111915:45:01.218 [qtp1665324560-21] DEBUG ResultSet - {conn-10004, stmt-20005, rs-50005} open
+111915:45:01.219 [qtp1665324560-21] DEBUG ResultSet - {conn-10004, stmt-20005, rs-50005} Header: [COUNT(0)]
+111915:45:01.220 [qtp1665324560-21] DEBUG ResultSet - {conn-10004, stmt-20005, rs-50005} Result: [5]
+111915:45:01.220 [qtp1665324560-21] DEBUG ResultSet - {conn-10004, stmt-20005, rs-50005} closed
+111915:45:01.220 [qtp1665324560-21] DEBUG Statement - {conn-10004, stmt-20005} closed
+111915:45:01.221 [qtp1665324560-21] DEBUG Connection - {conn-10004} pool-recycle
+111915:45:01.221 [qtp1665324560-21] INFO  ArticleService - [{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111915:45:01.221 [qtp1665324560-21] INFO  ArticleController - get article list, page:{"currentPage":1,"pageSize":3,"totalCount":5,"totalPage":2}, data:[{"articleId":7,"author":"??","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"???"},{"articleId":8,"author":"马云","externalLink":"www.taobao.com","publishTime":"2005-12-12","status":0,"title":"买买买"}]
+111915:45:24.590 [qtp1706655559-22] WARN  Validator - input params error, userId = null

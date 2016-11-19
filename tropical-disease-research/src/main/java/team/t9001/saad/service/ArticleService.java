@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import team.t9001.saad.common.Page;
 import team.t9001.saad.dao.ArticleDao;
 import team.t9001.saad.model.Article;
 
@@ -23,10 +24,11 @@ public class ArticleService {
 
     /**
      * 获取文章列表
+     * @param page
      * @return
      */
-    public List<Article> getArticleList(){
-        List<Article> articleList = articleDao.getArticleList();
+    public List<Article> getArticleList(Page page){
+        List<Article> articleList = articleDao.getArticleList(page);
         logger.info(JSON.toJSONString(articleList));
         return articleList;
     }
@@ -39,11 +41,21 @@ public class ArticleService {
         return articleDao.addArticle(article);
     }
 
+    /**
+     * 修改文章
+     * @param article
+     * @return
+     */
     public int modifyArticle(Article article) {
         return articleDao.modifyArticle(article);
     }
 
+    /**
+     * 删除文章
+     * @param articleId
+     * @return
+     */
     public int removeArticle(Integer articleId) {
-        return 1;
+        return articleDao.removeArticle(articleId);
     }
 }
