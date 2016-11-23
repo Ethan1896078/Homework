@@ -1,13 +1,15 @@
 package team.t9001.saad.dao;
 
-import org.springframework.jdbc.core.RowMapper;
-import org.springframework.stereotype.Repository;
-import team.t9001.saad.common.Page;
-import team.t9001.saad.model.Article;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
+
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
+
+import team.t9001.saad.common.Page;
+import team.t9001.saad.model.Article;
 
 /**
  * desc:
@@ -80,5 +82,35 @@ public class ArticleDao extends BaseDao {
     public int removeArticle(Integer articleId) {
         String sql = "DELETE FROM t_article WHERE articleId = ?";
         return jdbc.update(sql, articleId);
+    }
+    
+    /**
+     * 获取统计文章列表
+     * @return
+     */
+    public List<Article> getAnalysisArticleList(Page page, String analysisType, String analysisValue) {
+        int pageSize = page.getPageSize();
+        int beginIndex = page.getCurrentPage() * pageSize;
+
+        String whereSql = null;
+        if("author".equals(analysisType)){
+        	whereSql = " WHERE author = ?";
+    	}else if("magazine".equals(analysisType)){
+    		whereSql = " WHERE magazine = ?";
+    	}else if("year".equals(analysisType)){
+    		whereSql = " WHERE left(publish_time, 4) = ?";
+    	}else {
+    		return new ArrayList<Article>();
+    	}
+        String sql = "SELECT article_id, title, author, magazine, publish_time FROM t_article " + whereSql + " LIMIT ?, ?";
+        List<Article> articleList = jdbc.query(sql, articleMapper, analysisValue, beginIndex, pageSize);
+
+        String countSql = "SELECT COUNT(0) FROM t_article" + whereSql;
+        int totalCount = jdbc.queryForObject(countSql, Integer.class, analysisValue);
+        int totalPage = totalCount / pageSize + (totalCount % pageSize > 0 ? 1 : 0);
+        page.setTotalCount(totalCount);
+        page.setTotalPage(totalPage);
+
+        return articleList;
     }
 }
