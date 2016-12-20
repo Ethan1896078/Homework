@@ -33,6 +33,8 @@ public interface UrlConstants {
     String add_team = "add_team";
     /** 获取团队列表 */
     String get_team_list = "get_team_list";
+    /** 获取团队信息 */
+    String get_team_info = "get_team_info";
     /** 修改团队 */
     String modify_team = "modify_team";
     /** 删除团队 */
@@ -42,6 +44,8 @@ public interface UrlConstants {
     String add_news = "add_news";
     /** 获取新闻列表 */
     String get_news_list = "get_news_list";
+    /** 获取新闻信息 */
+    String get_news_info = "get_news_info";
     /** 修改新闻 */
     String modify_news = "modify_news";
     /** 删除新闻 */
@@ -51,6 +55,8 @@ public interface UrlConstants {
     String add_notice = "add_notice";
     /** 获取通知列表 */
     String get_notice_list = "get_notice_list";
+    /** 获取通知信息 */
+    String get_notice_info = "get_notice_info";
     /** 修改通知 */
     String modify_notice = "modify_notice";
     /** 删除通知 */
@@ -60,6 +66,8 @@ public interface UrlConstants {
     String add_article = "add_article";
     /** 获取文章列表 */
     String get_article_list = "get_article_list";
+    /** 获取文章信息 */
+    String get_article_info = "get_article_info";
     /** 修改文章 */
     String modify_article = "modify_article";
     /** 删除文章 */
@@ -69,6 +77,8 @@ public interface UrlConstants {
     String add_meeting = "add_meeting";
     /** 获取会议列表 */
     String get_meeting_list = "get_meeting_list";
+    /** 获取会议信息 */
+    String get_meeting_info = "get_meeting_info";
     /** 修改会议 */
     String modify_meeting = "modify_meeting";
     /** 删除会议 */

@@ -73,6 +73,33 @@ public class ArticleController {
     }
 
     /**
+     * 获取文章信息
+     * @return
+     */
+    @ResponseBody
+    @RequestMapping(value = UrlConstants.get_article_info, method = RequestMethod.GET)
+    public RequestStatus getArticleInfo(HttpServletRequest request, Integer articleId){
+        RequestStatus requestStatus = new RequestStatus();
+        //校验参数
+        if (articleId == null) {
+            requestStatus.setStatus(Constants.STATUS_NOT_OK);
+            requestStatus.setErrorCode(ErrorCode.INPUT_ERROR);
+            requestStatus.setErrorMsg(ErrorCode.ERROR_MSG_MAP.get(ErrorCode.INPUT_ERROR) + "，articleId = " + articleId);
+            return requestStatus;
+        }
+
+        if (!validatorService.validateLogin(requestStatus, request)) {
+            return requestStatus;
+        }
+
+        Article articleInfo = articleService.getArticleInfoById(articleId);
+        logger.info("get article info, data:{}", articleInfo);
+
+        requestStatus.setData(JSON.toJSONString(articleInfo));
+        return requestStatus;
+    }
+
+    /**
      * 获取文章列表
      * @param page
      * @return

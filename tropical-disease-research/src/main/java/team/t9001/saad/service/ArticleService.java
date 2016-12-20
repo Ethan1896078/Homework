@@ -58,4 +58,13 @@ public class ArticleService {
     public int removeArticle(Integer articleId) {
         return articleDao.removeArticle(articleId);
     }
+
+    /**
+     * 根据文章id获取文章信息
+     * @param articleId
+     * @return
+     */
+    public Article getArticleInfoById(Integer articleId) {
+        return articleDao.getArticleInfoById(articleId);
+    }
 }

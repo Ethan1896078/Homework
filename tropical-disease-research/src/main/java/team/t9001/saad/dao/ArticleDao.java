@@ -81,4 +81,18 @@ public class ArticleDao extends BaseDao {
         String sql = "UPDATE t_article SET status = 0 WHERE article_id = ?";
         return jdbc.update(sql, articleId);
     }
+
+    /**
+     * 根据文章id获取文章信息
+     * @param articleId
+     * @return
+     */
+    public Article getArticleInfoById(Integer articleId) {
+        String sql = "SELECT * FROM t_article WHERE article_id = ? AND status = 1";
+        List<Article> articleList = jdbc.query(sql, articleMapper, articleId);
+        if (articleList != null && articleList.size() > 0) {
+            return articleList.get(0);
+        }
+        return null;
+    }
 }
