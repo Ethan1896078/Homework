@@ -6,7 +6,7 @@ package team.t9001.saad.model;
  */
 public class Article {
     /** 文章编号 */
-    private Integer articleId;
+    private int articleId;
     /** 主题 */
     private String title;
     /** 作者 */
@@ -16,21 +16,17 @@ public class Article {
     /** 外部链接 */
     private String externalLink;
     /** 状态 */
-    private Integer status;
+    private int status;
 
-    public Integer getStatus() {
-        return status;
+    public Article() {
+        status = 1;
     }
 
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
-    public Integer getArticleId() {
+    public int getArticleId() {
         return articleId;
     }
 
-    public void setArticleId(Integer articleId) {
+    public void setArticleId(int articleId) {
         this.articleId = articleId;
     }
 
@@ -66,6 +62,13 @@ public class Article {
         this.externalLink = externalLink;
     }
 
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
 
     @Override
     public String toString() {

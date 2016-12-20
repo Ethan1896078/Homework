@@ -37,7 +37,7 @@ public class ArticleDao extends BaseDao {
         int pageSize = page.getPageSize();
         int beginIndex = page.getCurrentPage() * pageSize;
 
-        String sql = "SELECT * FROM t_article LIMIT ?, ?";
+        String sql = "SELECT * FROM t_article WHERE status = 1 LIMIT ?, ?";
         List<Article> articleList = jdbc.query(sql, articleMapper, beginIndex, pageSize);
 
         String countSql = "SELECT COUNT(0) FROM t_article";
@@ -66,7 +66,7 @@ public class ArticleDao extends BaseDao {
      * @return
      */
     public int modifyArticle(Article article) {
-        String sql = "UPDATE t_article SET title = ?, author = ?, publish_time = ?, external_link = ?, status = ?" +
+        String sql = "UPDATE t_article SET title = ?, author = ?, publish_time = ?, external_link = ?, status = ? " +
                 "WHERE article_id = ?";
         return jdbc.update(sql, article.getTitle(), article.getAuthor(), article.getPublishTime()
                 , article.getExternalLink(), article.getStatus(), article.getArticleId());
@@ -78,7 +78,21 @@ public class ArticleDao extends BaseDao {
      * @return
      */
     public int removeArticle(Integer articleId) {
-        String sql = "DELETE FROM t_article WHERE articleId = ?";
+        String sql = "UPDATE t_article SET status = 0 WHERE article_id = ?";
         return jdbc.update(sql, articleId);
+    }
+
+    /**
+     * 根据文章id获取文章信息
+     * @param articleId
+     * @return
+     */
+    public Article getArticleInfoById(Integer articleId) {
+        String sql = "SELECT * FROM t_article WHERE article_id = ? AND status = 1";
+        List<Article> articleList = jdbc.query(sql, articleMapper, articleId);
+        if (articleList != null && articleList.size() > 0) {
+            return articleList.get(0);
+        }
+        return null;
     }
 }
