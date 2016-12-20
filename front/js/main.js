@@ -1,4 +1,4 @@
-// var host='http://'+document.location.host||'192.168.1.103'
+﻿// var host='http://'+document.location.host||'192.168.1.103'
 var host='http://192.168.1.103:8080'
 $(function($) {
 
@@ -32,7 +32,7 @@ $(function($) {
 
                 userAdd(0, _data)
                     // location.reload()
-                layer.alert('成功', {
+                 layer.alert('成功', {
                         icon: 1,
                         skin: 'layer-ext-moon' //该皮肤由layer.seaning.com友情扩展。关于皮肤的扩展规则，去这里查阅
                     }, function() {
