@@ -374,50 +374,52 @@ function editUser(id) {
             "loginUserId": getCookie('loginUserId'),
             'userId': id
         },
-        type: "POST",
+        type: "get",
         url: host + "/tropical-disease-research/user/get_user_info",
         success: function(msg) {
             var tmp = { list: JSON.parse(msg.data) }
 
             var html = template('signInTpl', tmp);
-        }
-    });
 
-
-
-    layer.open({
-        type: 1,
-        skin: 'layui-layer-rim', //加上边框
-        area: ['50%', 'auto'], //宽高
-        content: html,
-        btn: ['保存', '取消'],
-        yes: function(index, layero) {
-            //do something
-            var _data = {
-                loginUserId: getCookie('loginUserId'),
-                userId: getCookie('loginUserId'),
-                account: $('#newPlayer').find("[name='account']").val(),
-                username: $('#newPlayer').find("[name='username']").val(),
-                password: md5($('#newPlayer').find("[name='password']").val()),
+            layer.open({
                 type: 1,
-                status: 1
-            }
+                skin: 'layui-layer-rim', //加上边框
+                area: ['50%', 'auto'], //宽高
+                content: html,
+                btn: ['保存', '取消'],
+                yes: function(index, layero) {
+                    //do something
+                    var _data = {
+                        loginUserId: getCookie('loginUserId'),
+                        userId: getCookie('loginUserId'),
+                        account: $('#newPlayer').find("[name='account']").val(),
+                        username: $('#newPlayer').find("[name='username']").val(),
+                        password: md5($('#newPlayer').find("[name='password']").val()),
+                        type: 1,
+                        status: 1
+                    }
 
-            userAdd(1, _data)
-                // location.reload()
-            layer.alert('成功', {
-                    icon: 1,
-                    skin: 'layer-ext-moon' //该皮肤由layer.seaning.com友情扩展。关于皮肤的扩展规则，去这里查阅
-                }, function() {
-                    location.reload()
-                })
-                // layer.close(index); //如果设定了yes回调，需进行手工关闭
-        },
-        no: function(index, layero) {
-            //do something
-            layer.close(index); //如果设定了yes回调，需进行手工关闭
+                    userAdd(1, _data)
+                        // location.reload()
+                    layer.alert('成功', {
+                            icon: 1,
+                            skin: 'layer-ext-moon' //该皮肤由layer.seaning.com友情扩展。关于皮肤的扩展规则，去这里查阅
+                        }, function() {
+                            location.reload()
+                        })
+                        // layer.close(index); //如果设定了yes回调，需进行手工关闭
+                },
+                no: function(index, layero) {
+                    //do something
+                    layer.close(index); //如果设定了yes回调，需进行手工关闭
+                }
+            });
         }
     });
+
+
+
+
 
 
 
