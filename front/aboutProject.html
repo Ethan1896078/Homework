@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./bootcss/css/bootstrap-theme.min.css">
     <link href="css/index.css" rel="stylesheet">
 </head>
+
 <body>
     <link rel="import" href="header.html?__inline">
     <div class="container project-cont">
@@ -25,7 +26,7 @@
                                 <h3 class="panel-title">项目进展 <a href="./back.html" class="label label-primary toEdit">管理</a></h3>
                             </div>
                             <div class="panel-body">
-                                <ul class="project-panel-ul">
+                                <ul class="project-panel-ul" id='aboutListTplShell'>
                                     <li class="ths">
                                         <h4 class="ths-name">螺</h4>
                                         <a class="ths-specs">藁杆双脐螺</a>
@@ -75,32 +76,53 @@
                 <p class="normal-p"><a href="#" class="normal-a-link">查看数据库</a></p>
             </div>
             <div class="normal-part">
-                <h4 class="normal-title">项目组发表的文章</h4>
-                {{each list.publishArticleTitles as item indexs}}
-                    {{each list.publishArticleLinks as items index}}
-                        {{if index!==indexs}}
-                        <p class="normal-p">
-                            <a href={{items}} class="normal-a-link">{{item}}</a>
-                        </p>
-                        {{/if}}
-                    {{/each}}
-                {{/each}}
-
+                <h4 class="normal-title">项目组发表的文章</h4> {{each list.publishArticleTitles as item indexs}} {{each list.publishArticleLinks as items index}} {{if index!==indexs}}
+                <p class="normal-p">
+                    <a href={{items}} class="normal-a-link">{{item}}</a>
+                </p>
+                {{/if}} {{/each}} {{/each}}
                 <p class="normal-p"><a href="#" class="normal-a-link">查看更多</a></p>
             </div>
             <div class="normal-part">
                 <h4 class="normal-title">相关文章</h4>
                 <ul>
-                 {{each list.relatedArticleTitles as item indexs}}
-                    {{each list.relatedArticleLinks as items index}}
-                        {{if index!==indexs}}
-                       <li><a href={{items}} class="normal-a-link">{{item}}</a></li>
-                        {{/if}}
-                    {{/each}}
-                {{/each}}
+                    {{each list.relatedArticleTitles as item indexs}} {{each list.relatedArticleLinks as items index}} {{if index!==indexs}}
+                    <li><a href={{items}} class="normal-a-link">{{item}}</a></li>
+                    {{/if}} {{/each}} {{/each}}
                 </ul><a href="#" class="normal-a-link">查看更多</a></div>
         </div>
     </script>
+
+
+    <script id="aboutListTpl" type="text/html">
+        <li class="ths">
+            <h4 class="ths-name">螺</h4>
+            {{each list as item }}
+                {{if item.bioClass=='螺' }}
+                    <a class="ths-specs" href="./aboutProject.html?id={{item.projectId}}" >{{item.projectName}}</a>
+                {{/if}}
+            {{/each}}
+        </li>
+       
+        <li class="ths">
+            <h4 class="ths-name">蚊媒</h4>
+            {{each list as item }}
+                {{if item.bioClass=='蚊媒' }}
+                    <a class="ths-specs" href="./aboutProject.html?id={{item.projectId}}">{{item.projectName}}</a>
+                {{/if}}
+            {{/each}}
+        </li>
+        <li class="ths">
+            <h4 class="ths-name">病原体</h4>
+            {{each list as item }}
+                {{if item.bioClass=='病原体' }}
+                    <a class="ths-specs" href="./aboutProject.html?id={{item.projectId}}">{{item.projectName}}</a>
+                {{/if}}
+            {{/each}}
+        </li>
+    </script>
+
+
     <script type="text/javascript">
     pages['aboutProject']()
     </script>
