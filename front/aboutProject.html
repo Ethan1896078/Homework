@@ -76,20 +76,31 @@
                 <p class="normal-p"><a href="#" class="normal-a-link">查看数据库</a></p>
             </div>
             <div class="normal-part">
-                <h4 class="normal-title">项目组发表的文章</h4> {{each list.publishArticleTitles as item indexs}} {{each list.publishArticleLinks as items index}} {{if index!==indexs}}
-                <p class="normal-p">
-                    <a href={{items}} class="normal-a-link">{{item}}</a>
-                </p>
-                {{/if}} {{/each}} {{/each}}
+                <h4 class="normal-title">项目组发表的文章</h4> 
+                {{each list.publishArticleTitles as item indexs}} 
+                    {{each list.publishArticleLinks as items index}} 
+                        {{if index!=indexs}}
+                            <p class="normal-p">
+                                <a href={{items}} class="normal-a-link">{{item}}</a>
+                            </p>
+                        {{/if}} 
+                    {{/each}} 
+                {{/each}}
                 <p class="normal-p"><a href="#" class="normal-a-link">查看更多</a></p>
             </div>
             <div class="normal-part">
                 <h4 class="normal-title">相关文章</h4>
                 <ul>
-                    {{each list.relatedArticleTitles as item indexs}} {{each list.relatedArticleLinks as items index}} {{if index!==indexs}}
-                    <li><a href={{items}} class="normal-a-link">{{item}}</a></li>
-                    {{/if}} {{/each}} {{/each}}
-                </ul><a href="#" class="normal-a-link">查看更多</a></div>
+                    {{each list.relatedArticleTitles as item indexs}}
+                     {{each list.relatedArticleLinks as items index}} 
+                         {{if index!=indexs}}
+                        <li><a href={{items}} class="normal-a-link">{{item}}</a></li>
+                        {{/if}}
+                     {{/each}} 
+                    {{/each}}
+                </ul>
+                    <p class="normal-p"><a href="#" class="normal-a-link">查看更多</a></p>
+                </div>
         </div>
     </script>
 

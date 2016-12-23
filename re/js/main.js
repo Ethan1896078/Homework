@@ -14,7 +14,8 @@ $(function($) {
     //登出
     setTimeout(function() {
         $('#logout').click(function() {
-            deleteCookie('loginUserId')
+            deleteCookie('loginUserId');
+            deleteCookie('level');
             location.href = './index.html'
         })
 
@@ -33,8 +34,8 @@ $(function($) {
                 var _data = {
                     account: $('#newPlayer').find("[name='account']").val(),
                     username: $('#newPlayer').find("[name='username']").val(),
-                    password: md5($('#newPlayer').find("[name='password']").val()),
-                    type: 1,
+                    password: md5($('#newPlayer').find("[name='account']").val() + $('#newPlayer').find("[name='password']").val()),
+                    type: 0,
                     status: 1
                 }
 
@@ -59,7 +60,7 @@ $(function($) {
     $('#loginBtn').click(function() {
         var data = {
             account: $('#myModal').find("[name='account']").val(),
-            password: md5($('#myModal').find("[name='password']").val())
+            password: md5($('#myModal').find("[name='account']").val() + $('#myModal').find("[name='password']").val())
         }
 
         $.ajax({
@@ -70,7 +71,15 @@ $(function($) {
                 if (msg.status == 1) {
                     var tmp = JSON.parse(msg.data)
                     setCookie('loginUserId', tmp.loginUserId)
+                    console.log(tmp)
                     location.reload()
+                } else {
+                    layer.alert(msg.errorMsg, {
+                        icon: 1,
+                        skin: 'layer-ext-moon' //该皮肤由layer.seaning.com友情扩展。关于皮肤的扩展规则，去这里查阅
+                    }, function() {
+                        location.reload()
+                    })
                 }
 
             }
@@ -98,7 +107,7 @@ $('.login-btn').click(function() {
             //do something
             var data = {
                 account: $('#myModal').find("[name='account']").val(),
-                password: md5($('#myModal').find("[name='password']").val())
+                password: md5($('#myModal').find("[name='account']").val() + $('#myModal').find("[name='password']").val())
             }
 
             $.ajax({
@@ -187,33 +196,38 @@ var pages = {
             url: host + "/tropical-disease-research/project/get_project_list",
             data: _data,
             success: function(msg) {
-                // console.log(msg.data)
-                var tmp = { list: JSON.parse(msg.data) }
-                var html = template('aboutListTpl', tmp);
-                console.log(tmp)
-                document.getElementById('aboutListTplShell').innerHTML = html;
+                console.log(msg.data)
+                if (msg.status == 1) {
+                    var tmp = { list: JSON.parse(msg.data) }
+                    var html = template('aboutListTpl', tmp);
+                    console.log(tmp)
+                    document.getElementById('aboutListTplShell').innerHTML = html;
 
 
-                $.ajax({
-                    type: "get",
-                    url: host + "/tropical-disease-research/project/get_project_info",
-                    data: _data,
-                    success: function(msg) {
-                        var tmp = { list: JSON.parse(msg.data) }
-                        console.log(tmp)
-                        tmp.list.publishArticleLinks = tmp.list.publishArticleLinks.split(',');
-                        tmp.list.publishArticleTitles = tmp.list.publishArticleTitles.split(',');
+                    $.ajax({
+                        type: "get",
+                        url: host + "/tropical-disease-research/project/get_project_info",
+                        data: _data,
+                        success: function(msg) {
+                            var tmp = { list: JSON.parse(msg.data) }
+                            console.log(tmp)
+                            tmp.list.publishArticleLinks = tmp.list.publishArticleLinks.split(',').reverse();
+                            tmp.list.publishArticleTitles = tmp.list.publishArticleTitles.split(',');
 
-                        tmp.list.relatedArticleLinks = tmp.list.relatedArticleLinks.split(',');
-                        tmp.list.relatedArticleTitles = tmp.list.relatedArticleTitles.split(',')
+                            tmp.list.relatedArticleLinks = tmp.list.relatedArticleLinks.split(',').reverse();
+                            tmp.list.relatedArticleTitles = tmp.list.relatedArticleTitles.split(',');
 
 
-                        var html = template('projectMainTpl', tmp);
+                            var html = template('projectMainTpl', tmp);
 
-                        document.getElementById('projectMainTplShell').innerHTML = html;
-                    }
-                });
+                            document.getElementById('projectMainTplShell').innerHTML = html;
+                        }
+                    });
+                } else {
 
+                    $('#myModal').modal({ 'show': true })
+
+                }
             }
         });
 
@@ -232,16 +246,21 @@ var pages = {
             url: host + "/tropical-disease-research/user/get_user_list",
             data: _data,
             success: function(msg) {
-                console.log(msg.data)
                 if (msg.status == 0) {
                     $.ajax({
                         type: "get",
                         url: host + "/tropical-disease-research/user/get_user_info",
                         data: { userId: getCookie('loginUserId'), loginUserId: getCookie('loginUserId') },
                         success: function(msg) {
+                            console.log(11)
                             console.log(msg.data)
-
+                            var levels = ['普通用户', '管理员', '超级管理员', '实验室模块'];
                             var tmp = { list: JSON.parse(msg.data) }
+                            console.log(tmp.list)
+                            tmp.list.map(function(item) {
+                                console.log(item)
+                                item.level = levels[item.type]
+                            })
 
                             console.log(tmp)
                             var html = template('signInTpl', tmp);
@@ -260,7 +279,7 @@ var pages = {
                                         userId: getCookie('loginUserId'),
                                         account: $('#newPlayer').find("[name='account']").val(),
                                         username: $('#newPlayer').find("[name='username']").val(),
-                                        password: md5($('#newPlayer').find("[name='password']").val()),
+                                        password: md5($('#newPlayer').find("[name='account']").val() + $('#newPlayer').find("[name='password']").val()),
                                         type: 1,
                                         status: 1
                                     }
@@ -287,11 +306,32 @@ var pages = {
 
                 } else {
 
-                    var tmp = { list: JSON.parse(msg.data) }
+                    $.ajax({
+                        data: {
+                            "loginUserId": getCookie('loginUserId'),
+                            'userId': getCookie('loginUserId')
+                        },
+                        type: "get",
+                        url: host + "/tropical-disease-research/user/get_user_info",
+                        success: function(msgs) {
+                            var tmp = JSON.parse(msgs.data);
+                            setCookie('level', tmp.type);
 
-                    var html = template('userMainTpl', tmp);
 
-                    document.getElementById('userMainTplShell').innerHTML = html;
+                            var levels = ['普通用户', '管理员', '超级管理员', '实验室模块'];
+                            tmp = { list: JSON.parse(msg.data) }
+
+                            tmp.list.map(function(item) {
+                                item.level = levels[item.type]
+                            })
+
+                            var html = template('userMainTpl', tmp);
+
+                            document.getElementById('userMainTplShell').innerHTML = html;
+                        }
+                    });
+
+
 
                 }
 
@@ -326,23 +366,35 @@ function deleteInfo(id) {
 }
 
 function deleteUser(id) {
-    // alert(1)
-    $.ajax({
-        data: {
-            "loginUserId": getCookie('loginUserId'),
-            'userId': id
+    layer.alert('是否删除？', {
+        icon: 1,
+        skin: 'layer-ext-moon',
+        btn: ['确定', '取消'],
+        yes: function() {
+            $.ajax({
+                data: {
+                    "loginUserId": getCookie('loginUserId'),
+                    'userId': id
+                },
+                type: "POST",
+                url: host + '/tropical-disease-research/user/remove_user',
+                success: function(msg) {
+                    layer.alert('删除成功', {
+                        icon: 1,
+                        skin: 'layer-ext-moon' //该皮肤由layer.seaning.com友情扩展。关于皮肤的扩展规则，去这里查阅
+                    }, function() {
+                        location.reload()
+                    })
+                }
+            });
         },
-        type: "POST",
-        url: host + '/tropical-disease-research/user/remove_user',
-        success: function(msg) {
-            layer.alert('删除成功', {
-                icon: 1,
-                skin: 'layer-ext-moon' //该皮肤由layer.seaning.com友情扩展。关于皮肤的扩展规则，去这里查阅
-            }, function() {
-                location.reload()
-            })
+        no: function() {
+            layer.close(index); //如果设定了yes回调，需进行手工关闭
         }
-    });
+    })
+
+    // alert(1)
+
 }
 
 function editInfo(id) {
@@ -377,7 +429,7 @@ function editUser(id) {
         type: "get",
         url: host + "/tropical-disease-research/user/get_user_info",
         success: function(msg) {
-            var tmp = { list: JSON.parse(msg.data) }
+            var tmp = { list: JSON.parse(msg.data), level: getCookie('level') }
 
             var html = template('signInTpl', tmp);
 
@@ -394,8 +446,8 @@ function editUser(id) {
                         userId: getCookie('loginUserId'),
                         account: $('#newPlayer').find("[name='account']").val(),
                         username: $('#newPlayer').find("[name='username']").val(),
-                        password: md5($('#newPlayer').find("[name='password']").val()),
-                        type: 1,
+                        password: md5($('#newPlayer').find("[name='account']").val() + $('#newPlayer').find("[name='password']").val()),
+                        type: $('#newPlayer .type-select').val() || getCookie('level'),
                         status: 1
                     }
 

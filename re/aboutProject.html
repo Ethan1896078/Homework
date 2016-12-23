@@ -101,18 +101,45 @@
 
 <script id="signInTpl" type="text/html">
     <div class="modal-body" id='newPlayer'>
+        {{if list!=''}}
         <div class="input-group">
             <span class="input-group-addon">姓名</span>
-            <input type="text" class="form-control" placeholder="请输入姓名" name='username' value={{list.username}}>
+            <input type="text" class="form-control" placeholder="请输入姓名" name='username' value={{list.username}}  >
         </div>
         <div class="input-group">
             <span class="input-group-addon">帐号</span>
-            <input type="text" class="form-control" placeholder="请输入帐号" name='account'  value={{list.account}}>
+            <input type="text" class="form-control" placeholder="请输入帐号" name='account'  value={{list.account}}  >
         </div>
         <div class="input-group">
             <span class="input-group-addon">密码</span>
             <input type="password" class="form-control" placeholder="请输入密码" name='password'>
         </div>
+        {{else}}
+         <div class="input-group">
+            <span class="input-group-addon">姓名</span>
+            <input type="text" class="form-control" placeholder="请输入姓名" name='username' value={{list.username}} disabled>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">帐号</span>
+            <input type="text" class="form-control" placeholder="请输入帐号" name='account'  value={{list.account}} disabled>
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">密码</span>
+            <input type="password" class="form-control" placeholder="请输入密码" name='password'>
+        </div>
+        {{/if}}
+
+        {{if level==2}}
+        <div class="input-group">
+            <span class="input-group-addon">权限</span>
+            <select class="form-control type-select">
+              <option value="0">普通用户</option>
+                <option value="1">管理员</option>
+                <option value="2">超级管理员</option>
+                <option value="3">实验室模块</option>
+            </select>
+        </div>
+        {{/if}}
           <div class="input-group">
             <span class="input-group-addon">确认密码</span>
             <input type="password" class="form-control" placeholder="请输入密码" name='agaipassword'>
@@ -227,20 +254,31 @@
                 <p class="normal-p"><a href="#" class="normal-a-link">查看数据库</a></p>
             </div>
             <div class="normal-part">
-                <h4 class="normal-title">项目组发表的文章</h4> {{each list.publishArticleTitles as item indexs}} {{each list.publishArticleLinks as items index}} {{if index!==indexs}}
-                <p class="normal-p">
-                    <a href={{items}} class="normal-a-link">{{item}}</a>
-                </p>
-                {{/if}} {{/each}} {{/each}}
+                <h4 class="normal-title">项目组发表的文章</h4> 
+                {{each list.publishArticleTitles as item indexs}} 
+                    {{each list.publishArticleLinks as items index}} 
+                        {{if index!=indexs}}
+                            <p class="normal-p">
+                                <a href={{items}} class="normal-a-link">{{item}}</a>
+                            </p>
+                        {{/if}} 
+                    {{/each}} 
+                {{/each}}
                 <p class="normal-p"><a href="#" class="normal-a-link">查看更多</a></p>
             </div>
             <div class="normal-part">
                 <h4 class="normal-title">相关文章</h4>
                 <ul>
-                    {{each list.relatedArticleTitles as item indexs}} {{each list.relatedArticleLinks as items index}} {{if index!==indexs}}
-                    <li><a href={{items}} class="normal-a-link">{{item}}</a></li>
-                    {{/if}} {{/each}} {{/each}}
-                </ul><a href="#" class="normal-a-link">查看更多</a></div>
+                    {{each list.relatedArticleTitles as item indexs}}
+                     {{each list.relatedArticleLinks as items index}} 
+                         {{if index!=indexs}}
+                        <li><a href={{items}} class="normal-a-link">{{item}}</a></li>
+                        {{/if}}
+                     {{/each}} 
+                    {{/each}}
+                </ul>
+                    <p class="normal-p"><a href="#" class="normal-a-link">查看更多</a></p>
+                </div>
         </div>
     </script>
 
