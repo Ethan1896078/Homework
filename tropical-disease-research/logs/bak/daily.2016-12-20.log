@@ -1,0 +1,382 @@
+122018:57:30.058 [qtp1182985125-18] DEBUG Connection - {conn-10001} connected
+122018:57:30.083 [qtp1182985125-18] DEBUG Connection - {conn-10002} connected
+122018:57:30.098 [qtp1182985125-18] DEBUG Connection - {conn-10003} connected
+122018:57:30.110 [qtp1182985125-18] DEBUG Connection - {conn-10004} connected
+122018:57:30.119 [qtp1182985125-18] INFO  DruidDataSource - {dataSource-1} inited
+122018:57:30.124 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-connect
+122018:57:30.237 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20000} created. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122018:57:30.245 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20000} Parameters : [1]
+122018:57:30.245 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20000} Types : [INTEGER]
+122018:57:30.250 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20000, rs-50000} query executed. 6.725546 millis. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122018:57:30.250 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} open
+122018:57:30.252 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122018:57:30.259 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Result: [1, 黄哲, true, huangzhe, , true, 2016-12-17 22:37:10.0, 2016-12-17 22:38:00.0]
+122018:57:30.262 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} closed
+122018:57:30.262 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20000} closed
+122018:57:30.263 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-recycle
+122018:57:30.263 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-connect
+122018:57:30.264 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20001} created. SELECT * FROM t_team WHERE team_id = ? AND status = 1
+122018:57:30.264 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20001} Parameters : [1]
+122018:57:30.264 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20001} Types : [INTEGER]
+122018:57:30.266 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20001, rs-50001} query executed. 1.807559 millis. SELECT * FROM t_team WHERE team_id = ? AND status = 1
+122018:57:30.266 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} open
+122018:57:30.266 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} Header: [team_id, team_name, leader, members, part_team, status, create_time, update_time]
+122018:57:30.267 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} Result: [1, 草帽海贼团, 路飞, 乌索普，娜美，索罗，山治，乔巴，费兰奇，布鲁克，罗宾, 红心海贼团, true, 2016-12-18 14:48:46.0, 2016-12-18 14:48:46.0]
+122018:57:30.267 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} closed
+122018:57:30.268 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20001} closed
+122018:57:30.268 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-recycle
+122018:57:30.268 [qtp1182985125-18] INFO  TeamController - get team info, data:Team{teamId=1, teamName='草帽海贼团', leader='路飞', members='乌索普，娜美，索罗，山治，乔巴，费兰奇，布鲁克，罗宾', partTeam='红心海贼团', status=1}
+122018:58:38.494 [qtp1182985125-20] DEBUG Connection - {conn-10004} pool-connect
+122018:58:38.495 [qtp1182985125-20] DEBUG Statement - {conn-10004, pstmt-20002} created. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122018:58:38.496 [qtp1182985125-20] DEBUG Statement - {conn-10004, pstmt-20002} Parameters : [1]
+122018:58:38.496 [qtp1182985125-20] DEBUG Statement - {conn-10004, pstmt-20002} Types : [INTEGER]
+122018:58:38.497 [qtp1182985125-20] DEBUG Statement - {conn-10004, pstmt-20002, rs-50002} query executed. 0.655057 millis. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122018:58:38.497 [qtp1182985125-20] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} open
+122018:58:38.497 [qtp1182985125-20] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122018:58:38.497 [qtp1182985125-20] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} Result: [1, 黄哲, true, huangzhe, , true, 2016-12-17 22:37:10.0, 2016-12-17 22:38:00.0]
+122018:58:38.498 [qtp1182985125-20] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} closed
+122018:58:38.498 [qtp1182985125-20] DEBUG Statement - {conn-10004, pstmt-20002} closed
+122018:58:38.498 [qtp1182985125-20] DEBUG Connection - {conn-10004} pool-recycle
+122018:58:38.498 [qtp1182985125-20] DEBUG Connection - {conn-10004} pool-connect
+122018:58:38.499 [qtp1182985125-20] DEBUG Statement - {conn-10004, pstmt-20003} created. SELECT * FROM t_news WHERE news_id = ? AND status = 1
+122018:58:38.500 [qtp1182985125-20] DEBUG Statement - {conn-10004, pstmt-20003} Parameters : [1]
+122018:58:38.500 [qtp1182985125-20] DEBUG Statement - {conn-10004, pstmt-20003} Types : [INTEGER]
+122018:58:38.502 [qtp1182985125-20] DEBUG Statement - {conn-10004, pstmt-20003, rs-50003} query executed. 2.172685 millis. SELECT * FROM t_news WHERE news_id = ? AND status = 1
+122018:58:38.503 [qtp1182985125-20] DEBUG ResultSet - {conn-10004, pstmt-20003, rs-50003} open
+122018:58:38.503 [qtp1182985125-20] DEBUG ResultSet - {conn-10004, pstmt-20003, rs-50003} Header: [news_id, title, content, author, publish_time, status, create_time, update_time]
+122018:58:38.503 [qtp1182985125-20] DEBUG ResultSet - {conn-10004, pstmt-20003, rs-50003} closed
+122018:58:38.504 [qtp1182985125-20] DEBUG Statement - {conn-10004, pstmt-20003} closed
+122018:58:38.504 [qtp1182985125-20] DEBUG Connection - {conn-10004} pool-recycle
+122018:58:38.504 [qtp1182985125-20] INFO  NewsController - get news info, data:null
+122018:58:53.438 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-connect
+122018:58:53.438 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20004} created. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122018:58:53.439 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20004} Parameters : [1]
+122018:58:53.439 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20004} Types : [INTEGER]
+122018:58:53.439 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20004, rs-50004} query executed. 0.59377 millis. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122018:58:53.439 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50004} open
+122018:58:53.439 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50004} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122018:58:53.440 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50004} Result: [1, 黄哲, true, huangzhe, , true, 2016-12-17 22:37:10.0, 2016-12-17 22:38:00.0]
+122018:58:53.440 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50004} closed
+122018:58:53.440 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20004} closed
+122018:58:53.440 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-recycle
+122018:58:53.440 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-connect
+122018:58:53.440 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20005} created. SELECT * FROM t_news WHERE news_id = ? AND status = 1
+122018:58:53.441 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20005} Parameters : [3]
+122018:58:53.441 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20005} Types : [INTEGER]
+122018:58:53.441 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20005, rs-50005} query executed. 0.701379 millis. SELECT * FROM t_news WHERE news_id = ? AND status = 1
+122018:58:53.441 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20005, rs-50005} open
+122018:58:53.442 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20005, rs-50005} Header: [news_id, title, content, author, publish_time, status, create_time, update_time]
+122018:58:53.442 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20005, rs-50005} Result: [3, 我国“十二五”期间血吸虫病防治策略与工作重点1, 中国控制血吸虫病流行的关键是管理好人畜粪便1..., 张三三1, 2016-12-18, true, 2016-12-18 17:34:59.0, 2016-12-18 17:51:11.0]
+122018:58:53.442 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20005, rs-50005} closed
+122018:58:53.442 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20005} closed
+122018:58:53.443 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-recycle
+122018:58:53.443 [qtp1182985125-18] INFO  NewsController - get news info, data:News{newsId=3, title='中国控制血吸虫病流行的关键是管理好人畜粪便1...', content='null', author='张三三1', publishTime='2016-12-18', status=1}
+122019:01:20.334 [qtp1182985125-19] DEBUG Connection - {conn-10004} pool-connect
+122019:01:20.335 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20006} created. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122019:01:20.335 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20006} Parameters : [1]
+122019:01:20.335 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20006} Types : [INTEGER]
+122019:01:20.336 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20006, rs-50006} query executed. 0.705147 millis. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122019:01:20.336 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20006, rs-50006} open
+122019:01:20.336 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20006, rs-50006} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122019:01:20.337 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20006, rs-50006} Result: [1, 黄哲, true, huangzhe, , true, 2016-12-17 22:37:10.0, 2016-12-17 22:38:00.0]
+122019:01:20.337 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20006, rs-50006} closed
+122019:01:20.337 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20006} closed
+122019:01:20.337 [qtp1182985125-19] DEBUG Connection - {conn-10004} pool-recycle
+122019:01:20.337 [qtp1182985125-19] DEBUG Connection - {conn-10004} pool-connect
+122019:01:20.338 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20007} created. SELECT * FROM t_notice WHERE notice_id = ? AND status = 1
+122019:01:20.339 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20007} Parameters : [3]
+122019:01:20.339 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20007} Types : [INTEGER]
+122019:01:20.339 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20007, rs-50007} query executed. 0.582302 millis. SELECT * FROM t_notice WHERE notice_id = ? AND status = 1
+122019:01:20.339 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20007, rs-50007} open
+122019:01:20.339 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20007, rs-50007} Header: [notice_id, title, content, author, publish_time, status, create_time, update_time]
+122019:01:20.339 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20007, rs-50007} closed
+122019:01:20.340 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20007} closed
+122019:01:20.340 [qtp1182985125-19] DEBUG Connection - {conn-10004} pool-recycle
+122019:01:20.340 [qtp1182985125-19] INFO  NoticeController - get notice info, data:null
+122019:01:26.945 [qtp1182985125-19] DEBUG Connection - {conn-10004} pool-connect
+122019:01:26.947 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20008} created. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122019:01:26.947 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20008} Parameters : [1]
+122019:01:26.947 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20008} Types : [INTEGER]
+122019:01:26.950 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20008, rs-50008} query executed. 2.293454 millis. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122019:01:26.950 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20008, rs-50008} open
+122019:01:26.950 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20008, rs-50008} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122019:01:26.950 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20008, rs-50008} Result: [1, 黄哲, true, huangzhe, , true, 2016-12-17 22:37:10.0, 2016-12-17 22:38:00.0]
+122019:01:26.951 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20008, rs-50008} closed
+122019:01:26.951 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20008} closed
+122019:01:26.951 [qtp1182985125-19] DEBUG Connection - {conn-10004} pool-recycle
+122019:01:26.951 [qtp1182985125-19] DEBUG Connection - {conn-10004} pool-connect
+122019:01:26.952 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20009} created. SELECT * FROM t_notice WHERE notice_id = ? AND status = 1
+122019:01:26.952 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20009} Parameters : [1]
+122019:01:26.952 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20009} Types : [INTEGER]
+122019:01:26.953 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20009, rs-50009} query executed. 0.94677 millis. SELECT * FROM t_notice WHERE notice_id = ? AND status = 1
+122019:01:26.953 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20009, rs-50009} open
+122019:01:26.954 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20009, rs-50009} Header: [notice_id, title, content, author, publish_time, status, create_time, update_time]
+122019:01:26.954 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20009, rs-50009} Result: [1, 福寿螺相关会议通知1, 17日下午14:00于大会议室开展有关预防福寿螺所带病毒的会议，要求全员参加1。, 李四四1, 2016-12-16, true, 2016-12-18 18:24:54.0, 2016-12-18 18:26:41.0]
+122019:01:26.955 [qtp1182985125-19] DEBUG ResultSet - {conn-10004, pstmt-20009, rs-50009} closed
+122019:01:26.955 [qtp1182985125-19] DEBUG Statement - {conn-10004, pstmt-20009} closed
+122019:01:26.956 [qtp1182985125-19] DEBUG Connection - {conn-10004} pool-recycle
+122019:01:26.956 [qtp1182985125-19] INFO  NoticeController - get notice info, data:Notice{noticeId=1, title='17日下午14:00于大会议室开展有关预防福寿螺所带病毒的会议，要求全员参加1。', content='null', author='李四四1', publishTime='2016-12-16', status=1}
+122019:02:39.870 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-connect
+122019:02:39.870 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20010} created. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122019:02:39.871 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20010} Parameters : [1]
+122019:02:39.871 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20010} Types : [INTEGER]
+122019:02:39.871 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20010, rs-50010} query executed. 0.550671 millis. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122019:02:39.871 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20010, rs-50010} open
+122019:02:39.871 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20010, rs-50010} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122019:02:39.872 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20010, rs-50010} Result: [1, 黄哲, true, huangzhe, , true, 2016-12-17 22:37:10.0, 2016-12-17 22:38:00.0]
+122019:02:39.872 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20010, rs-50010} closed
+122019:02:39.872 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20010} closed
+122019:02:39.872 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-recycle
+122019:02:39.872 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-connect
+122019:02:39.873 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20011} created. SELECT * FROM t_article WHERE article_id = ? AND status = 1
+122019:02:39.873 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20011} Parameters : [3]
+122019:02:39.873 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20011} Types : [INTEGER]
+122019:02:39.874 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20011, rs-50011} query executed. 0.588721 millis. SELECT * FROM t_article WHERE article_id = ? AND status = 1
+122019:02:39.874 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20011, rs-50011} open
+122019:02:39.874 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20011, rs-50011} Header: [article_id, title, author, publish_time, external_link, status, create_time, update_time]
+122019:02:39.874 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20011, rs-50011} Result: [3, hello, kugou, 谢振宇, 2004-01-01, http://www.kugou.com, true, 2016-11-18 00:25:39.0, 2016-11-18 00:25:39.0]
+122019:02:39.875 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20011, rs-50011} closed
+122019:02:39.875 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20011} closed
+122019:02:39.875 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-recycle
+122019:02:39.875 [qtp1182985125-18] INFO  ArticleController - get article info, data:Article{articleId=3, title='hello, kugou', author='谢振宇', publishTime='2004-01-01', externalLink='http://www.kugou.com', status=1}
+122019:03:35.450 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-connect
+122019:03:35.451 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20012} created. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122019:03:35.452 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20012} Parameters : [1]
+122019:03:35.452 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20012} Types : [INTEGER]
+122019:03:35.453 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20012, rs-50012} query executed. 0.877814 millis. SELECT * FROM t_user_1 WHERE user_id = ? AND status = 1
+122019:03:35.453 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20012, rs-50012} open
+122019:03:35.453 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20012, rs-50012} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122019:03:35.454 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20012, rs-50012} Result: [1, 黄哲, true, huangzhe, , true, 2016-12-17 22:37:10.0, 2016-12-17 22:38:00.0]
+122019:03:35.454 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20012, rs-50012} closed
+122019:03:35.454 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20012} closed
+122019:03:35.455 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-recycle
+122019:03:35.455 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-connect
+122019:03:35.457 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20013} created. SELECT * FROM t_meeting WHERE meeting_id = ? AND status = 1
+122019:03:35.458 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20013} Parameters : [2]
+122019:03:35.458 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20013} Types : [INTEGER]
+122019:03:35.460 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20013, rs-50013} query executed. 1.95381 millis. SELECT * FROM t_meeting WHERE meeting_id = ? AND status = 1
+122019:03:35.460 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20013, rs-50013} open
+122019:03:35.461 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20013, rs-50013} Header: [meeting_id, title, convene_time, content, status, create_time, update_time]
+122019:03:35.462 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20013, rs-50013} Result: [2, 关于埃及XXX病毒的最新治疗方式的会议1, 2012-09-02, 该治疗方式是由YYY博士及其团队研发的1..., true, 2016-12-18 15:21:17.0, 2016-12-18 15:29:58.0]
+122019:03:35.463 [qtp1182985125-18] DEBUG ResultSet - {conn-10004, pstmt-20013, rs-50013} closed
+122019:03:35.463 [qtp1182985125-18] DEBUG Statement - {conn-10004, pstmt-20013} closed
+122019:03:35.463 [qtp1182985125-18] DEBUG Connection - {conn-10004} pool-recycle
+122019:03:35.464 [qtp1182985125-18] INFO  MeetingController - get meeting info, data:Meeting{meetingId=2, title=关于埃及XXX病毒的最新治疗方式的会议1, conveneTime='2012-09-02', content='该治疗方式是由YYY博士及其团队研发的1...', status=1}
+122020:34:41.258 [qtp130721104-18] DEBUG Connection - {conn-10001} connected
+122020:34:41.278 [qtp130721104-18] DEBUG Connection - {conn-10002} connected
+122020:34:41.308 [qtp130721104-18] DEBUG Connection - {conn-10003} connected
+122020:34:41.332 [qtp130721104-18] DEBUG Connection - {conn-10004} connected
+122020:34:41.351 [qtp130721104-18] INFO  DruidDataSource - {dataSource-1} inited
+122020:34:41.356 [qtp130721104-18] DEBUG Connection - {conn-10004} pool-connect
+122020:34:41.470 [qtp130721104-18] DEBUG Statement - {conn-10004, pstmt-20000} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:34:41.480 [qtp130721104-18] DEBUG Statement - {conn-10004, pstmt-20000} Parameters : [huangzhe]
+122020:34:41.480 [qtp130721104-18] DEBUG Statement - {conn-10004, pstmt-20000} Types : [VARCHAR]
+122020:34:41.486 [qtp130721104-18] DEBUG Statement - {conn-10004, pstmt-20000, rs-50000} query executed. 7.574175 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:34:41.486 [qtp130721104-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} open
+122020:34:41.488 [qtp130721104-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122020:34:41.496 [qtp130721104-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Result: [1, 黄哲, true, huangzhe, , true, 2016-12-17 22:37:10.0, 2016-12-17 22:38:00.0]
+122020:34:41.499 [qtp130721104-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} closed
+122020:34:41.499 [qtp130721104-18] DEBUG Statement - {conn-10004, pstmt-20000} closed
+122020:34:41.500 [qtp130721104-18] DEBUG Connection - {conn-10004} pool-recycle
+122020:35:14.272 [qtp130721104-18] DEBUG Connection - {conn-10004} pool-connect
+122020:35:14.273 [qtp130721104-18] DEBUG Statement - {conn-10004, pstmt-20001} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:35:14.274 [qtp130721104-18] DEBUG Statement - {conn-10004, pstmt-20001} Parameters : [zhangsan]
+122020:35:14.274 [qtp130721104-18] DEBUG Statement - {conn-10004, pstmt-20001} Types : [VARCHAR]
+122020:35:14.275 [qtp130721104-18] DEBUG Statement - {conn-10004, pstmt-20001, rs-50001} query executed. 0.822603 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:35:14.275 [qtp130721104-18] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} open
+122020:35:14.275 [qtp130721104-18] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122020:35:14.276 [qtp130721104-18] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} closed
+122020:35:14.276 [qtp130721104-18] DEBUG Statement - {conn-10004, pstmt-20001} closed
+122020:35:14.276 [qtp130721104-18] DEBUG Connection - {conn-10004} pool-recycle
+122020:35:27.781 [qtp130721104-17] DEBUG Connection - {conn-10004} pool-connect
+122020:35:27.784 [qtp130721104-17] DEBUG Statement - {conn-10004, pstmt-20002} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:35:27.785 [qtp130721104-17] DEBUG Statement - {conn-10004, pstmt-20002} Parameters : [zhangsan]
+122020:35:27.785 [qtp130721104-17] DEBUG Statement - {conn-10004, pstmt-20002} Types : [VARCHAR]
+122020:35:27.786 [qtp130721104-17] DEBUG Statement - {conn-10004, pstmt-20002, rs-50002} query executed. 1.210341 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:35:27.786 [qtp130721104-17] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} open
+122020:35:27.786 [qtp130721104-17] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122020:35:27.787 [qtp130721104-17] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} closed
+122020:35:27.787 [qtp130721104-17] DEBUG Statement - {conn-10004, pstmt-20002} closed
+122020:35:27.787 [qtp130721104-17] DEBUG Connection - {conn-10004} pool-recycle
+122020:38:01.615 [qtp2021835850-20] DEBUG ArticleController - login, account:zhangsan, password:e10adc3949ba59abbe56e057f20f883e
+122020:38:02.226 [qtp2021835850-20] DEBUG Connection - {conn-10001} connected
+122020:38:02.249 [qtp2021835850-20] DEBUG Connection - {conn-10002} connected
+122020:38:02.263 [qtp2021835850-20] DEBUG Connection - {conn-10003} connected
+122020:38:02.280 [qtp2021835850-20] DEBUG Connection - {conn-10004} connected
+122020:38:02.292 [qtp2021835850-20] INFO  DruidDataSource - {dataSource-1} inited
+122020:38:02.299 [qtp2021835850-20] DEBUG Connection - {conn-10004} pool-connect
+122020:38:02.400 [qtp2021835850-20] DEBUG Statement - {conn-10004, pstmt-20000} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:38:02.407 [qtp2021835850-20] DEBUG Statement - {conn-10004, pstmt-20000} Parameters : [zhangsan]
+122020:38:02.407 [qtp2021835850-20] DEBUG Statement - {conn-10004, pstmt-20000} Types : [VARCHAR]
+122020:38:02.412 [qtp2021835850-20] DEBUG Statement - {conn-10004, pstmt-20000, rs-50000} query executed. 5.669925 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:38:02.412 [qtp2021835850-20] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} open
+122020:38:02.414 [qtp2021835850-20] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122020:38:02.419 [qtp2021835850-20] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} closed
+122020:38:02.420 [qtp2021835850-20] DEBUG Statement - {conn-10004, pstmt-20000} closed
+122020:38:02.420 [qtp2021835850-20] DEBUG Connection - {conn-10004} pool-recycle
+122020:39:30.769 [qtp2021835850-21] DEBUG ArticleController - login, account:zhangsan, password:e10adc3949ba59abbe56e057f20f883e
+122020:39:31.452 [qtp2021835850-21] DEBUG Connection - {conn-10001} connected
+122020:39:31.564 [qtp2021835850-21] DEBUG Connection - {conn-10002} connected
+122020:39:31.605 [qtp2021835850-21] DEBUG Connection - {conn-10003} connected
+122020:39:31.666 [qtp2021835850-21] DEBUG Connection - {conn-10004} connected
+122020:39:31.682 [qtp2021835850-21] INFO  DruidDataSource - {dataSource-1} inited
+122020:39:31.690 [qtp2021835850-21] DEBUG Connection - {conn-10004} pool-connect
+122020:39:31.968 [qtp2021835850-21] DEBUG Statement - {conn-10004, pstmt-20000} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:39:31.985 [qtp2021835850-21] DEBUG Statement - {conn-10004, pstmt-20000} Parameters : [zhangsan]
+122020:39:31.985 [qtp2021835850-21] DEBUG Statement - {conn-10004, pstmt-20000} Types : [VARCHAR]
+122020:39:31.995 [qtp2021835850-21] DEBUG Statement - {conn-10004, pstmt-20000, rs-50000} query executed. 11.77602 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:39:31.996 [qtp2021835850-21] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} open
+122020:39:31.999 [qtp2021835850-21] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122020:39:32.003 [qtp2021835850-21] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} closed
+122020:39:32.004 [qtp2021835850-21] DEBUG Statement - {conn-10004, pstmt-20000} closed
+122020:39:32.005 [qtp2021835850-21] DEBUG Connection - {conn-10004} pool-recycle
+122020:44:41.095 [qtp212232499-18] DEBUG UserService - login user id:
+122020:44:41.104 [qtp212232499-18] WARN  ValidatorService - user not login.
+122020:44:59.633 [qtp212232499-19] DEBUG UserService - login user id:
+122020:44:59.636 [qtp212232499-19] WARN  ValidatorService - user not login.
+122020:45:03.277 [qtp212232499-22] DEBUG UserService - login user id:
+122020:45:03.277 [qtp212232499-22] WARN  ValidatorService - user not login.
+122020:45:17.381 [qtp212232499-20] DEBUG UserService - login user id:
+122020:45:17.382 [qtp212232499-20] WARN  ValidatorService - user not login.
+122020:45:48.228 [qtp212232499-21] DEBUG ArticleController - login, account:zhangsan, password:dc3a8f1670d65bea69b7b65048a0ac40
+122020:45:48.730 [qtp212232499-21] DEBUG Connection - {conn-10001} connected
+122020:45:48.744 [qtp212232499-21] DEBUG Connection - {conn-10002} connected
+122020:45:48.758 [qtp212232499-21] DEBUG Connection - {conn-10003} connected
+122020:45:48.772 [qtp212232499-21] DEBUG Connection - {conn-10004} connected
+122020:45:48.782 [qtp212232499-21] INFO  DruidDataSource - {dataSource-1} inited
+122020:45:48.787 [qtp212232499-21] DEBUG Connection - {conn-10004} pool-connect
+122020:45:48.875 [qtp212232499-21] DEBUG Statement - {conn-10004, pstmt-20000} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:45:48.880 [qtp212232499-21] DEBUG Statement - {conn-10004, pstmt-20000} Parameters : [zhangsan]
+122020:45:48.880 [qtp212232499-21] DEBUG Statement - {conn-10004, pstmt-20000} Types : [VARCHAR]
+122020:45:48.884 [qtp212232499-21] DEBUG Statement - {conn-10004, pstmt-20000, rs-50000} query executed. 4.517132 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:45:48.884 [qtp212232499-21] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} open
+122020:45:48.886 [qtp212232499-21] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122020:45:48.890 [qtp212232499-21] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} closed
+122020:45:48.891 [qtp212232499-21] DEBUG Statement - {conn-10004, pstmt-20000} closed
+122020:45:48.891 [qtp212232499-21] DEBUG Connection - {conn-10004} pool-recycle
+122020:52:11.885 [qtp212232499-20] DEBUG ArticleController - login, account:lisi, password:e10adc3949ba59abbe56e057f20f883e
+122020:52:11.894 [qtp212232499-20] DEBUG Connection - {conn-10004} pool-connect
+122020:52:11.904 [qtp212232499-20] DEBUG Statement - {conn-10004, pstmt-20001} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:52:11.906 [qtp212232499-20] DEBUG Statement - {conn-10004, pstmt-20001} Parameters : [lisi]
+122020:52:11.907 [qtp212232499-20] DEBUG Statement - {conn-10004, pstmt-20001} Types : [VARCHAR]
+122020:52:11.911 [qtp212232499-20] DEBUG Statement - {conn-10004, pstmt-20001, rs-50001} query executed. 5.240465 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:52:11.912 [qtp212232499-20] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} open
+122020:52:11.912 [qtp212232499-20] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122020:52:11.932 [qtp212232499-20] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} Result: [4, 李四1, true, lisi, 10ff6fd5be37d0c3d9c26a8ce996bed9, true, 2016-12-18 01:59:41.0, 2016-12-18 15:28:51.0]
+122020:52:11.935 [qtp212232499-20] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} closed
+122020:52:11.936 [qtp212232499-20] DEBUG Statement - {conn-10004, pstmt-20001} closed
+122020:52:11.936 [qtp212232499-20] DEBUG Connection - {conn-10004} pool-recycle
+122020:54:48.581 [qtp948424584-20] DEBUG UserService - login user id:
+122020:54:48.592 [qtp948424584-20] WARN  ValidatorService - user not login.
+122020:54:56.241 [qtp948424584-18] DEBUG ArticleController - login, account:lisi, password:e10adc3949ba59abbe56e057f20f883e
+122020:54:56.811 [qtp948424584-18] DEBUG Connection - {conn-10001} connected
+122020:54:56.831 [qtp948424584-18] DEBUG Connection - {conn-10002} connected
+122020:54:56.849 [qtp948424584-18] DEBUG Connection - {conn-10003} connected
+122020:54:56.864 [qtp948424584-18] DEBUG Connection - {conn-10004} connected
+122020:54:56.876 [qtp948424584-18] INFO  DruidDataSource - {dataSource-1} inited
+122020:54:56.880 [qtp948424584-18] DEBUG Connection - {conn-10004} pool-connect
+122020:54:56.971 [qtp948424584-18] DEBUG Statement - {conn-10004, pstmt-20000} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:54:56.976 [qtp948424584-18] DEBUG Statement - {conn-10004, pstmt-20000} Parameters : [lisi]
+122020:54:56.976 [qtp948424584-18] DEBUG Statement - {conn-10004, pstmt-20000} Types : [VARCHAR]
+122020:54:56.980 [qtp948424584-18] DEBUG Statement - {conn-10004, pstmt-20000, rs-50000} query executed. 4.134132 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:54:56.980 [qtp948424584-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} open
+122020:54:56.981 [qtp948424584-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122020:54:56.988 [qtp948424584-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Result: [4, 李四1, true, lisi, 10ff6fd5be37d0c3d9c26a8ce996bed9, true, 2016-12-18 01:59:41.0, 2016-12-18 15:28:51.0]
+122020:54:56.990 [qtp948424584-18] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} closed
+122020:54:56.991 [qtp948424584-18] DEBUG Statement - {conn-10004, pstmt-20000} closed
+122020:54:56.991 [qtp948424584-18] DEBUG Connection - {conn-10004} pool-recycle
+122020:54:56.992 [qtp948424584-18] DEBUG ArticleController - match fail, user info from db:User{userId=4, username='李四1', type=1, status=1, account='lisi', password='10ff6fd5be37d0c3d9c26a8ce996bed9'}
+122020:55:34.377 [qtp948424584-21] DEBUG Connection - {conn-10004} pool-connect
+122020:55:34.380 [qtp948424584-21] DEBUG Statement - {conn-10004, pstmt-20001} created. INSERT INTO t_user_1 (username, type, status, account, password) VALUES (?, ?, ?, ?, ?)
+122020:55:34.381 [qtp948424584-21] DEBUG Statement - {conn-10004, pstmt-20001} Parameters : [王五, 1, 1, wangwu, e10adc3949ba59abbe56e057f20f883e]
+122020:55:34.382 [qtp948424584-21] DEBUG Statement - {conn-10004, pstmt-20001} Types : [VARCHAR, INTEGER, INTEGER, VARCHAR, VARCHAR]
+122020:55:34.391 [qtp948424584-21] DEBUG Statement - {conn-10004, pstmt-20001} update executed. effort 1. 9.709144 millis. INSERT INTO t_user_1 (username, type, status, account, password) VALUES (?, ?, ?, ?, ?)
+122020:55:34.392 [qtp948424584-21] DEBUG Statement - {conn-10004, pstmt-20001} closed
+122020:55:34.392 [qtp948424584-21] DEBUG Connection - {conn-10004} pool-recycle
+122020:55:34.392 [qtp948424584-21] INFO  ArticleController - add user success, user:User{userId=0, username='王五', type=1, status=1, account='wangwu', password='e10adc3949ba59abbe56e057f20f883e'}.
+122020:56:57.383 [qtp948424584-17] DEBUG ArticleController - login, account:wangwu, password:e10adc3949ba59abbe56e057f20f883e
+122020:56:57.385 [qtp948424584-17] DEBUG Connection - {conn-10004} pool-connect
+122020:56:57.386 [qtp948424584-17] DEBUG Statement - {conn-10004, pstmt-20002} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:56:57.387 [qtp948424584-17] DEBUG Statement - {conn-10004, pstmt-20002} Parameters : [wangwu]
+122020:56:57.387 [qtp948424584-17] DEBUG Statement - {conn-10004, pstmt-20002} Types : [VARCHAR]
+122020:56:57.388 [qtp948424584-17] DEBUG Statement - {conn-10004, pstmt-20002, rs-50001} query executed. 1.021782 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:56:57.388 [qtp948424584-17] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50001} open
+122020:56:57.388 [qtp948424584-17] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50001} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122020:56:57.389 [qtp948424584-17] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50001} Result: [13, 王五, true, wangwu, e10adc3949ba59abbe56e057f20f883e, true, 2016-12-20 20:55:34.0, 2016-12-20 20:55:34.0]
+122020:56:57.390 [qtp948424584-17] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50001} closed
+122020:56:57.390 [qtp948424584-17] DEBUG Statement - {conn-10004, pstmt-20002} closed
+122020:56:57.390 [qtp948424584-17] DEBUG Connection - {conn-10004} pool-recycle
+122020:57:11.208 [qtp948424584-18] DEBUG UserService - login user id:
+122020:57:11.208 [qtp948424584-18] WARN  ValidatorService - user not login.
+122020:57:37.293 [qtp948424584-19] DEBUG ArticleController - login, account:wangwu, password:e10adc3949ba59abbe56e057f20f883e
+122020:57:37.295 [qtp948424584-19] DEBUG Connection - {conn-10004} pool-connect
+122020:57:37.295 [qtp948424584-19] DEBUG Statement - {conn-10004, pstmt-20003} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:57:37.296 [qtp948424584-19] DEBUG Statement - {conn-10004, pstmt-20003} Parameters : [wangwu]
+122020:57:37.296 [qtp948424584-19] DEBUG Statement - {conn-10004, pstmt-20003} Types : [VARCHAR]
+122020:57:37.297 [qtp948424584-19] DEBUG Statement - {conn-10004, pstmt-20003, rs-50002} query executed. 0.892513 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122020:57:37.297 [qtp948424584-19] DEBUG ResultSet - {conn-10004, pstmt-20003, rs-50002} open
+122020:57:37.297 [qtp948424584-19] DEBUG ResultSet - {conn-10004, pstmt-20003, rs-50002} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122020:57:37.297 [qtp948424584-19] DEBUG ResultSet - {conn-10004, pstmt-20003, rs-50002} Result: [13, 王五, true, wangwu, e10adc3949ba59abbe56e057f20f883e, true, 2016-12-20 20:55:34.0, 2016-12-20 20:55:34.0]
+122020:57:37.298 [qtp948424584-19] DEBUG ResultSet - {conn-10004, pstmt-20003, rs-50002} closed
+122020:57:37.298 [qtp948424584-19] DEBUG Statement - {conn-10004, pstmt-20003} closed
+122020:57:37.298 [qtp948424584-19] DEBUG Connection - {conn-10004} pool-recycle
+122021:02:28.809 [qtp948424584-18] DEBUG ArticleController - login, account:wangwu, password:e10adc3949ba59abbe56e057f20f883e
+122021:02:28.811 [qtp948424584-18] DEBUG Connection - {conn-10004} pool-connect
+122021:02:28.812 [qtp948424584-18] DEBUG Statement - {conn-10004, pstmt-20004} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122021:02:28.814 [qtp948424584-18] DEBUG Statement - {conn-10004, pstmt-20004} Parameters : [wangwu]
+122021:02:28.814 [qtp948424584-18] DEBUG Statement - {conn-10004, pstmt-20004} Types : [VARCHAR]
+122021:02:28.815 [qtp948424584-18] DEBUG Statement - {conn-10004, pstmt-20004, rs-50003} query executed. 1.199684 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122021:02:28.815 [qtp948424584-18] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50003} open
+122021:02:28.815 [qtp948424584-18] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50003} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122021:02:28.816 [qtp948424584-18] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50003} Result: [13, 王五, true, wangwu, e10adc3949ba59abbe56e057f20f883e, true, 2016-12-20 20:55:34.0, 2016-12-20 20:55:34.0]
+122021:02:28.816 [qtp948424584-18] DEBUG ResultSet - {conn-10004, pstmt-20004, rs-50003} closed
+122021:02:28.818 [qtp948424584-18] DEBUG Statement - {conn-10004, pstmt-20004} closed
+122021:02:28.819 [qtp948424584-18] DEBUG Connection - {conn-10004} pool-recycle
+122021:09:57.287 [qtp2027701910-21] DEBUG ArticleController - login, account:wangwu, password:e10adc3949ba59abbe56e057f20f883e
+122021:09:57.879 [qtp2027701910-21] DEBUG Connection - {conn-10001} connected
+122021:09:57.900 [qtp2027701910-21] DEBUG Connection - {conn-10002} connected
+122021:09:58.057 [qtp2027701910-21] DEBUG Connection - {conn-10003} connected
+122021:09:58.094 [qtp2027701910-21] DEBUG Connection - {conn-10004} connected
+122021:09:58.107 [qtp2027701910-21] INFO  DruidDataSource - {dataSource-1} inited
+122021:09:58.113 [qtp2027701910-21] DEBUG Connection - {conn-10004} pool-connect
+122021:09:58.291 [qtp2027701910-21] DEBUG Statement - {conn-10004, pstmt-20000} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122021:09:58.299 [qtp2027701910-21] DEBUG Statement - {conn-10004, pstmt-20000} Parameters : [wangwu]
+122021:09:58.299 [qtp2027701910-21] DEBUG Statement - {conn-10004, pstmt-20000} Types : [VARCHAR]
+122021:09:58.304 [qtp2027701910-21] DEBUG Statement - {conn-10004, pstmt-20000, rs-50000} query executed. 6.831491 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122021:09:58.305 [qtp2027701910-21] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} open
+122021:09:58.307 [qtp2027701910-21] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122021:09:58.320 [qtp2027701910-21] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} Result: [13, 王五, true, wangwu, e10adc3949ba59abbe56e057f20f883e, true, 2016-12-20 20:55:34.0, 2016-12-20 20:55:34.0]
+122021:09:58.324 [qtp2027701910-21] DEBUG ResultSet - {conn-10004, pstmt-20000, rs-50000} closed
+122021:09:58.325 [qtp2027701910-21] DEBUG Statement - {conn-10004, pstmt-20000} closed
+122021:09:58.326 [qtp2027701910-21] DEBUG Connection - {conn-10004} pool-recycle
+122021:09:58.716 [qtp2027701910-21] DEBUG ArticleController - login success, account:wangwu
+122021:10:25.341 [qtp2027701910-17] DEBUG UserService - login user id:
+122021:10:25.346 [qtp2027701910-17] WARN  ValidatorService - user not login.
+122021:13:33.891 [qtp2027701910-19] DEBUG UserService - login user id:
+122021:13:33.899 [qtp2027701910-19] WARN  ValidatorService - user not login.
+122021:16:22.110 [qtp2027701910-18] DEBUG ArticleController - login, account:wangwu, password:e10adc3949ba59abbe56e057f20f883e
+122021:16:22.112 [qtp2027701910-18] DEBUG Connection - {conn-10004} pool-connect
+122021:16:22.114 [qtp2027701910-18] DEBUG Statement - {conn-10004, pstmt-20001} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122021:16:22.115 [qtp2027701910-18] DEBUG Statement - {conn-10004, pstmt-20001} Parameters : [wangwu]
+122021:16:22.115 [qtp2027701910-18] DEBUG Statement - {conn-10004, pstmt-20001} Types : [VARCHAR]
+122021:16:22.116 [qtp2027701910-18] DEBUG Statement - {conn-10004, pstmt-20001, rs-50001} query executed. 1.873594 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122021:16:22.117 [qtp2027701910-18] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} open
+122021:16:22.117 [qtp2027701910-18] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122021:16:22.126 [qtp2027701910-18] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} Result: [13, 王五, true, wangwu, e10adc3949ba59abbe56e057f20f883e, true, 2016-12-20 20:55:34.0, 2016-12-20 20:55:34.0]
+122021:16:22.128 [qtp2027701910-18] DEBUG ResultSet - {conn-10004, pstmt-20001, rs-50001} closed
+122021:16:22.129 [qtp2027701910-18] DEBUG Statement - {conn-10004, pstmt-20001} closed
+122021:16:22.129 [qtp2027701910-18] DEBUG Connection - {conn-10004} pool-recycle
+122021:16:22.131 [qtp2027701910-18] DEBUG ArticleController - login success, account:wangwu
+122021:23:53.919 [qtp2027701910-22] DEBUG ArticleController - login, account:wangwu, password:e10adc3949ba59abbe56e057f20f883e
+122021:23:53.934 [qtp2027701910-22] DEBUG Connection - {conn-10004} pool-connect
+122021:23:53.938 [qtp2027701910-22] DEBUG Statement - {conn-10004, pstmt-20002} created. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122021:23:53.939 [qtp2027701910-22] DEBUG Statement - {conn-10004, pstmt-20002} Parameters : [wangwu]
+122021:23:53.940 [qtp2027701910-22] DEBUG Statement - {conn-10004, pstmt-20002} Types : [VARCHAR]
+122021:23:53.947 [qtp2027701910-22] DEBUG Statement - {conn-10004, pstmt-20002, rs-50002} query executed. 7.824291 millis. SELECT * FROM t_user_1 WHERE account = ? AND status = 1
+122021:23:53.948 [qtp2027701910-22] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} open
+122021:23:53.949 [qtp2027701910-22] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} Header: [user_id, username, type, account, password, status, create_time, update_time]
+122021:23:53.954 [qtp2027701910-22] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} Result: [13, 王五, true, wangwu, e10adc3949ba59abbe56e057f20f883e, true, 2016-12-20 20:55:34.0, 2016-12-20 20:55:34.0]
+122021:23:53.957 [qtp2027701910-22] DEBUG ResultSet - {conn-10004, pstmt-20002, rs-50002} closed
+122021:23:53.958 [qtp2027701910-22] DEBUG Statement - {conn-10004, pstmt-20002} closed
+122021:23:53.959 [qtp2027701910-22] DEBUG Connection - {conn-10004} pool-recycle
+122021:23:53.961 [qtp2027701910-22] DEBUG ArticleController - login success, account:wangwu
