@@ -104,7 +104,7 @@
 
 <script id="signInTpl" type="text/html">
     <div class="modal-body" id='newPlayer'>
-        {{if list!=''}}
+        {{if list==''||level==0}}
         <div class="input-group">
             <span class="input-group-addon">姓名</span>
             <input type="text" class="form-control" placeholder="请输入姓名" name='username' value={{list.username}}  >
@@ -117,8 +117,16 @@
             <span class="input-group-addon">密码</span>
             <input type="password" class="form-control" placeholder="请输入密码" name='password'>
         </div>
+        <div class="input-group">
+            <span class="input-group-addon">确认密码</span>
+            <input type="password" class="form-control" placeholder="请输入密码" name='agaipassword'>
+        </div>
         {{else}}
-         <div class="input-group">
+        <div class="input-group">
+            <span class="input-group-addon">用户编号</span>
+            <input type="text" class="form-control" placeholder="请输入姓名" name='userId' value={{list.userId}} disabled>
+        </div>
+        <div class="input-group">
             <span class="input-group-addon">姓名</span>
             <input type="text" class="form-control" placeholder="请输入姓名" name='username' value={{list.username}} disabled>
         </div>
@@ -126,9 +134,9 @@
             <span class="input-group-addon">帐号</span>
             <input type="text" class="form-control" placeholder="请输入帐号" name='account'  value={{list.account}} disabled>
         </div>
-        <div class="input-group">
+        <div class="input-group" style="display:none;">
             <span class="input-group-addon">密码</span>
-            <input type="password" class="form-control" placeholder="请输入密码" name='password'>
+            <input type="hidden" class="form-control" placeholder="请输入密码" name='password' value={{list.password}}>
         </div>
         {{/if}}
 
@@ -143,10 +151,7 @@
             </select>
         </div>
         {{/if}}
-          <div class="input-group">
-            <span class="input-group-addon">确认密码</span>
-            <input type="password" class="form-control" placeholder="请输入密码" name='agaipassword'>
-        </div>
+        
     </div>
 </script>
 

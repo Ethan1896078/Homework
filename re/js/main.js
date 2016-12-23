@@ -6,7 +6,7 @@ $(function($) {
 
     var data = {
         loginFlag: getCookie('loginUserId') ? 0 : 1,
-        list: ['文艺', '博客', '摄影', '电影', '民谣', '旅行', '吉他']
+        list: ''
     };
     var html = template('loginBtnTpl', data);
     document.getElementById('loginBtnShell').innerHTML = html;
@@ -254,14 +254,10 @@ var pages = {
                         success: function(msg) {
                             console.log(11)
                             console.log(msg.data)
-                            var levels = ['普通用户', '管理员', '超级管理员', '实验室模块'];
-                            var tmp = { list: JSON.parse(msg.data) }
-                            console.log(tmp.list)
-                            tmp.list.map(function(item) {
-                                console.log(item)
-                                item.level = levels[item.type]
-                            })
-
+                            var a=JSON.parse(msg.data)
+                            setCookie('level', a.type);
+                            var tmp = { list: a, level: getCookie('level') }
+                          
                             console.log(tmp)
                             var html = template('signInTpl', tmp);
 
@@ -443,10 +439,10 @@ function editUser(id) {
                     //do something
                     var _data = {
                         loginUserId: getCookie('loginUserId'),
-                        userId: getCookie('loginUserId'),
+                        userId: id,
                         account: $('#newPlayer').find("[name='account']").val(),
                         username: $('#newPlayer').find("[name='username']").val(),
-                        password: md5($('#newPlayer').find("[name='account']").val() + $('#newPlayer').find("[name='password']").val()),
+                        password: $('#newPlayer').find("[name='password']").val(),
                         type: $('#newPlayer .type-select').val() || getCookie('level'),
                         status: 1
                     }
