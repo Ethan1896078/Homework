@@ -172,6 +172,7 @@ public class UserController {
     @ResponseBody
     @RequestMapping(value = UrlConstants.modify_user, method = RequestMethod.POST)
     public RequestStatus modifyUser(HttpServletRequest request, User user){
+        logger.debug("modify user, user:{}", user);
         RequestStatus requestStatus = new RequestStatus();
 
         if (!validatorService.validateUserParam(requestStatus, user)

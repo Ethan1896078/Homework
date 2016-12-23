@@ -33,11 +33,9 @@
       <file leaf-file-name="ProjectController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/controller/ProjectController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state relative-caret-position="283">
+              <caret line="128" column="11" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,10 +43,12 @@
       <file leaf-file-name="ProjectService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/service/ProjectService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
+            <state relative-caret-position="570">
               <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="false" />
+                <element signature="e#973#974#0" expanded="false" />
+                <element signature="e#1026#1027#0" expanded="false" />
                 <element signature="e#1140#1141#0" expanded="false" />
                 <element signature="e#1196#1197#0" expanded="false" />
                 <element signature="e#1314#1315#0" expanded="false" />
@@ -60,39 +60,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
+            <state relative-caret-position="1653">
               <caret line="87" column="21" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProjectDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/dao/ProjectDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+            <state relative-caret-position="152">
+              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
               <folding>
-                <marker date="1482421307000" expanded="true" signature="1658:1709" ph="SELECT * FRO... t_project" />
-                <marker date="1482421307000" expanded="true" signature="1830:1860" ph="SELECT COUNT... t_project" />
-                <marker date="1482421307000" expanded="true" signature="2265:2348" ph="INSERT INTO t_project... " />
-                <marker date="1482421307000" expanded="true" signature="2265:2532" ph="INSERT INTO t_project... " />
-                <marker date="1482421307000" expanded="true" signature="3039:3349" ph="UPDATE t_pro... " />
-                <marker date="1482421307000" expanded="true" signature="3918:3970" ph="UPDATE t_pro... " />
-                <marker date="1482421307000" expanded="true" signature="4180:4239" ph="SELECT * FRO... t_project" />
+                <marker date="1482501087000" expanded="true" signature="1658:1709" ph="SELECT * FRO... t_project" />
+                <marker date="1482501087000" expanded="true" signature="1830:1860" ph="SELECT COUNT... t_project" />
+                <marker date="1482501087000" expanded="true" signature="2265:2532" ph="INSERT INTO t_project... " />
+                <marker date="1482501087000" expanded="true" signature="3039:3349" ph="UPDATE t_pro... " />
+                <marker date="1482501087000" expanded="true" signature="3918:3970" ph="UPDATE t_pro... " />
+                <marker date="1482501087000" expanded="true" signature="4180:4239" ph="SELECT * FRO... t_project" />
               </folding>
             </state>
           </provider>
@@ -119,12 +108,6 @@
                 <element signature="e#973#974#0" expanded="false" />
                 <element signature="e#1149#1150#0" expanded="false" />
                 <element signature="e#1167#1168#0" expanded="false" />
-                <element signature="e#1517#1841#0" expanded="false" />
-                <element signature="e#1840#1841#0" expanded="false" />
-                <element signature="e#3563#3918#0" expanded="false" />
-                <element signature="e#3917#3918#0" expanded="false" />
-                <element signature="e#4217#4551#0" expanded="false" />
-                <element signature="e#4550#4551#0" expanded="false" />
                 <element signature="e#5508#5509#0" expanded="false" />
                 <element signature="e#5550#5551#0" expanded="false" />
               </folding>
@@ -135,9 +118,37 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1007">
-              <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+            <state relative-caret-position="260">
+              <caret line="191" column="44" selection-start-line="191" selection-start-column="44" selection-end-line="191" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
+              <folding>
+                <marker date="1482507431000" expanded="true" signature="1036:1144" ph="INSERT INTO t_user_1... " />
+                <marker date="1482507431000" expanded="true" signature="1402:1481" ph="UPDATE t_use... " />
+                <marker date="1482507431000" expanded="true" signature="1702:1750" ph="UPDATE t_use... " />
+                <marker date="1482507431000" expanded="true" signature="1943:1998" ph="SELECT * FRO... t_user_1" />
+                <marker date="1482507431000" expanded="true" signature="2349:2404" ph="SELECT * FRO... t_user_1" />
+                <marker date="1482507431000" expanded="true" signature="2840:2905" ph="SELECT * FRO... t_user_1" />
+                <marker date="1482507431000" expanded="true" signature="3017:3046" ph="SELECT COUNT... t_user_1" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,36 +156,9 @@
       <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-              <folding>
-                <element signature="e#790#791#0" expanded="false" />
-                <element signature="e#816#817#0" expanded="false" />
-                <element signature="e#846#847#0" expanded="false" />
-                <element signature="e#875#876#0" expanded="false" />
-                <element signature="e#916#917#0" expanded="false" />
-                <element signature="e#952#953#0" expanded="false" />
-                <element signature="e#987#988#0" expanded="false" />
-                <element signature="e#1018#1019#0" expanded="false" />
-                <element signature="e#1066#1067#0" expanded="false" />
-                <element signature="e#1106#1107#0" expanded="false" />
-                <element signature="e#1134#1135#0" expanded="false" />
-                <element signature="e#1161#1162#0" expanded="false" />
-                <element signature="e#1198#1199#0" expanded="false" />
-                <element signature="e#1230#1231#0" expanded="false" />
-                <element signature="e#1260#1261#0" expanded="false" />
-                <element signature="e#1289#1290#0" expanded="false" />
-                <element signature="e#1330#1331#0" expanded="false" />
-                <element signature="e#1366#1367#0" expanded="false" />
-                <element signature="e#1400#1401#0" expanded="false" />
-                <element signature="e#1430#1431#0" expanded="false" />
-                <element signature="e#1476#1477#0" expanded="false" />
-                <element signature="e#1514#1515#0" expanded="false" />
-                <element signature="e#1549#1550#0" expanded="false" />
-                <element signature="e#1580#1581#0" expanded="false" />
-                <element signature="e#1628#1629#0" expanded="false" />
-                <element signature="e#1668#1669#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="-266">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -225,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/common/RequestStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/model/Team.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/model/Meeting.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/service/ProjectService.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/model/News.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/model/Project.java" />
@@ -247,12 +230,13 @@
         <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/service/TeamService.java" />
         <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/dao/TeamDao.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/controller/ProjectController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/dao/ProjectDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/controller/UserController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/service/ValidatorService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/dao/ProjectDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/controller/ProjectController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team/t9001/saad/dao/UserDao.java" />
       </list>
     </option>
   </component>
@@ -304,8 +288,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -325,6 +309,94 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tropical-disease-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tropical-disease-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tropical-disease-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tropical-disease-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tropical-disease-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tropical-disease-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tropical-disease-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tropical-disease-research" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -337,7 +409,7 @@
     <property name="project.structure.side.proportion" value="0.23621324" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="usercon&#9;PSI&#9;JAVA://team.t9001.saad.controller.UserController&#10;user&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/UserController.java&#10;pom&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/pom.xml&#10;project&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/ProjectController.java&#10;pro&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/model/Project.java&#10;userdao&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/dao/UserDao.java&#10;projectdao&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/dao/ProjectDao.java&#10;article&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/ArticleController.java&#10;proje&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/ProjectController.java&#10;arti&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/ArticleController.java&#10;Page&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/common/Page.java&#10;list.j&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/webapp/WEB-INF/pages/article/list.jsp&#10;pom.&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/pom.xml&#10;userser&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/service/UserService.java&#10;ar&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/ArticleController.java" />
+    <property name="SearchEverywhereHistoryKey" value="user&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/UserController.java&#10;usercon&#9;PSI&#9;JAVA://team.t9001.saad.controller.UserController&#10;pom&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/pom.xml&#10;project&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/ProjectController.java&#10;pro&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/model/Project.java&#10;userdao&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/dao/UserDao.java&#10;projectdao&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/dao/ProjectDao.java&#10;article&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/ArticleController.java&#10;proje&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/ProjectController.java&#10;arti&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/ArticleController.java&#10;Page&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/common/Page.java&#10;list.j&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/webapp/WEB-INF/pages/article/list.jsp&#10;pom.&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/pom.xml&#10;userser&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/service/UserService.java&#10;ar&#9;FILE&#9;file:///Users/huangzhe/Documents/MyCode/Study/Homework/tropical-disease-research/src/main/java/team/t9001/saad/controller/ArticleController.java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Work/projects/projects_idea/sing_server" />
     <property name="prop_add_unversioned_files" value="true" />
   </component>
@@ -849,14 +921,15 @@
       <workItem from="1482236667501" duration="16048000" />
       <workItem from="1482419123728" duration="3542000" />
       <workItem from="1482426479872" duration="1213000" />
+      <workItem from="1482497710708" duration="4205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98782000" />
+    <option name="totallyTimeSpent" value="102987000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="723" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -868,7 +941,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.503125" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1018,25 +1091,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="74" column="20" selection-start-line="69" selection-start-column="7" selection-end-line="74" selection-end-column="20" />
-          <folding>
-            <marker date="1482046004000" expanded="true" signature="1036:1054" ph="INSERT INTO t_user... " />
-            <marker date="1482046004000" expanded="true" signature="1036:1144" ph="INSERT INTO t_user_1... " />
-            <marker date="1482046004000" expanded="true" signature="1402:1522" ph="UPDATE t_use... " />
-            <marker date="1482046004000" expanded="true" signature="1802:1850" ph="UPDATE t_use... " />
-            <marker date="1482046004000" expanded="true" signature="2043:2083" ph="SELECT * FRO... t_user_1" />
-            <marker date="1482046004000" expanded="true" signature="2043:2098" ph="SELECT * FRO... t_user_1" />
-            <marker date="1482046004000" expanded="true" signature="2449:2493" ph="SELECT * FRO... t_user_1" />
-            <marker date="1482046004000" expanded="true" signature="2449:2504" ph="SELECT * FRO... t_user_1" />
-            <marker date="1482046004000" expanded="true" signature="2940:3005" ph="SELECT * FRO... t_user_1" />
-            <marker date="1482046004000" expanded="true" signature="3117:3146" ph="SELECT COUNT... t_user_1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/model/News.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="912">
@@ -1088,17 +1142,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1011#1012#0" expanded="false" />
-            <element signature="e#1064#1065#0" expanded="false" />
-            <element signature="e#1178#1179#0" expanded="false" />
-            <element signature="e#1234#1235#0" expanded="false" />
-            <element signature="e#1352#1353#0" expanded="false" />
-            <element signature="e#1410#1411#0" expanded="false" />
-            <element signature="e#1545#1546#0" expanded="false" />
-            <element signature="e#1608#1609#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1110,12 +1153,6 @@
             <element signature="imports" expanded="false" />
             <element signature="e#440#921#0" expanded="false" />
             <element signature="e#920#921#0" expanded="false" />
-            <marker date="1482227797000" expanded="true" signature="1147:1198" ph="SELECT * FRO... t_meeting" />
-            <marker date="1482227797000" expanded="true" signature="1319:1349" ph="SELECT COUNT... t_meeting" />
-            <marker date="1482227797000" expanded="true" signature="1758:1859" ph="INSERT INTO t_meeting... " />
-            <marker date="1482227797000" expanded="true" signature="2143:2258" ph="UPDATE t_mee... " />
-            <marker date="1482227797000" expanded="true" signature="2570:2622" ph="UPDATE t_mee... " />
-            <marker date="1482227797000" expanded="true" signature="2832:2891" ph="SELECT * FRO... t_meeting" />
           </folding>
         </state>
       </provider>
@@ -1134,10 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-533">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1482#1483#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1149,12 +1182,6 @@
             <element signature="imports" expanded="false" />
             <element signature="e#428#920#0" expanded="false" />
             <element signature="e#919#920#0" expanded="false" />
-            <marker date="1482227916000" expanded="true" signature="1140:1188" ph="SELECT * FRO... t_news" />
-            <marker date="1482227916000" expanded="true" signature="1300:1327" ph="SELECT COUNT... t_news" />
-            <marker date="1482227916000" expanded="true" signature="1717:1826" ph="INSERT INTO t_news... " />
-            <marker date="1482227916000" expanded="true" signature="2087:2208" ph="UPDATE t_new... " />
-            <marker date="1482227916000" expanded="true" signature="2511:2557" ph="UPDATE t_new... " />
-            <marker date="1482227916000" expanded="true" signature="2752:2805" ph="SELECT * FRO... t_news" />
           </folding>
         </state>
       </provider>
@@ -1173,17 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#992#993#0" expanded="false" />
-            <element signature="e#1042#1043#0" expanded="false" />
-            <element signature="e#1152#1153#0" expanded="false" />
-            <element signature="e#1205#1206#0" expanded="false" />
-            <element signature="e#1320#1321#0" expanded="false" />
-            <element signature="e#1375#1376#0" expanded="false" />
-            <element signature="e#1506#1507#0" expanded="false" />
-            <element signature="e#1566#1567#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,14 +1207,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1634">
           <caret line="93" column="26" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
-          <folding>
-            <marker date="1482228083000" expanded="true" signature="1180:1230" ph="SELECT * FRO... t_notice" />
-            <marker date="1482228083000" expanded="true" signature="1348:1377" ph="SELECT COUNT... t_notice" />
-            <marker date="1482228083000" expanded="true" signature="1777:1888" ph="INSERT INTO t_notice... " />
-            <marker date="1482228083000" expanded="true" signature="2167:2292" ph="UPDATE t_not... " />
-            <marker date="1482228083000" expanded="true" signature="2615:2665" ph="UPDATE t_not... " />
-            <marker date="1482228083000" expanded="true" signature="2870:2927" ph="SELECT * FRO... t_notice" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1234,17 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1273">
           <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#954#955#0" expanded="false" />
-            <element signature="e#998#999#0" expanded="false" />
-            <element signature="e#1100#1101#0" expanded="false" />
-            <element signature="e#1147#1148#0" expanded="false" />
-            <element signature="e#1256#1257#0" expanded="false" />
-            <element signature="e#1305#1306#0" expanded="false" />
-            <element signature="e#1428#1429#0" expanded="false" />
-            <element signature="e#1482#1483#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,12 +1262,6 @@
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <marker date="1482231292000" expanded="true" signature="1143:1191" ph="SELECT * FRO... t_team" />
-            <marker date="1482231292000" expanded="true" signature="1303:1330" ph="SELECT COUNT... t_team" />
-            <marker date="1482231292000" expanded="true" signature="1720:1830" ph="INSERT INTO t_team... " />
-            <marker date="1482231292000" expanded="true" signature="2108:2230" ph="UPDATE t_tea... " />
-            <marker date="1482231292000" expanded="true" signature="2533:2579" ph="UPDATE t_tea... " />
-            <marker date="1482231292000" expanded="true" signature="2774:2827" ph="SELECT * FRO... t_team" />
           </folding>
         </state>
       </provider>
@@ -1288,14 +1280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1320,7 +1304,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,22 +1315,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/controller/ProjectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="60" column="47" selection-start-line="60" selection-start-column="47" selection-end-line="60" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/service/ProjectService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
+        <state relative-caret-position="570">
           <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="false" />
+            <element signature="e#973#974#0" expanded="false" />
+            <element signature="e#1026#1027#0" expanded="false" />
             <element signature="e#1140#1141#0" expanded="false" />
             <element signature="e#1196#1197#0" expanded="false" />
             <element signature="e#1314#1315#0" expanded="false" />
@@ -1368,72 +1343,16 @@
             <element signature="e#973#974#0" expanded="false" />
             <element signature="e#1149#1150#0" expanded="false" />
             <element signature="e#1167#1168#0" expanded="false" />
-            <element signature="e#1517#1841#0" expanded="false" />
-            <element signature="e#1840#1841#0" expanded="false" />
-            <element signature="e#3563#3918#0" expanded="false" />
-            <element signature="e#3917#3918#0" expanded="false" />
-            <element signature="e#4217#4551#0" expanded="false" />
-            <element signature="e#4550#4551#0" expanded="false" />
             <element signature="e#5508#5509#0" expanded="false" />
             <element signature="e#5550#5551#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="e#790#791#0" expanded="false" />
-            <element signature="e#816#817#0" expanded="false" />
-            <element signature="e#846#847#0" expanded="false" />
-            <element signature="e#875#876#0" expanded="false" />
-            <element signature="e#916#917#0" expanded="false" />
-            <element signature="e#952#953#0" expanded="false" />
-            <element signature="e#987#988#0" expanded="false" />
-            <element signature="e#1018#1019#0" expanded="false" />
-            <element signature="e#1066#1067#0" expanded="false" />
-            <element signature="e#1106#1107#0" expanded="false" />
-            <element signature="e#1134#1135#0" expanded="false" />
-            <element signature="e#1161#1162#0" expanded="false" />
-            <element signature="e#1198#1199#0" expanded="false" />
-            <element signature="e#1230#1231#0" expanded="false" />
-            <element signature="e#1260#1261#0" expanded="false" />
-            <element signature="e#1289#1290#0" expanded="false" />
-            <element signature="e#1330#1331#0" expanded="false" />
-            <element signature="e#1366#1367#0" expanded="false" />
-            <element signature="e#1400#1401#0" expanded="false" />
-            <element signature="e#1430#1431#0" expanded="false" />
-            <element signature="e#1476#1477#0" expanded="false" />
-            <element signature="e#1514#1515#0" expanded="false" />
-            <element signature="e#1549#1550#0" expanded="false" />
-            <element signature="e#1580#1581#0" expanded="false" />
-            <element signature="e#1628#1629#0" expanded="false" />
-            <element signature="e#1668#1669#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="1653">
           <caret line="87" column="21" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
           <folding />
         </state>
@@ -1449,16 +1368,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/dao/ProjectDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+        <state relative-caret-position="152">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
           <folding>
-            <marker date="1482421307000" expanded="true" signature="1658:1709" ph="SELECT * FRO... t_project" />
-            <marker date="1482421307000" expanded="true" signature="1830:1860" ph="SELECT COUNT... t_project" />
-            <marker date="1482421307000" expanded="true" signature="2265:2348" ph="INSERT INTO t_project... " />
-            <marker date="1482421307000" expanded="true" signature="2265:2532" ph="INSERT INTO t_project... " />
-            <marker date="1482421307000" expanded="true" signature="3039:3349" ph="UPDATE t_pro... " />
-            <marker date="1482421307000" expanded="true" signature="3918:3970" ph="UPDATE t_pro... " />
-            <marker date="1482421307000" expanded="true" signature="4180:4239" ph="SELECT * FRO... t_project" />
+            <marker date="1482501087000" expanded="true" signature="1658:1709" ph="SELECT * FRO... t_project" />
+            <marker date="1482501087000" expanded="true" signature="1830:1860" ph="SELECT COUNT... t_project" />
+            <marker date="1482501087000" expanded="true" signature="2265:2532" ph="INSERT INTO t_project... " />
+            <marker date="1482501087000" expanded="true" signature="3039:3349" ph="UPDATE t_pro... " />
+            <marker date="1482501087000" expanded="true" signature="3918:3970" ph="UPDATE t_pro... " />
+            <marker date="1482501087000" expanded="true" signature="4180:4239" ph="SELECT * FRO... t_project" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/controller/ProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="128" column="11" selection-start-line="128" selection-start-column="11" selection-end-line="128" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="191" column="44" selection-start-line="191" selection-start-column="44" selection-end-line="191" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team/t9001/saad/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="50" column="66" selection-start-line="50" selection-start-column="66" selection-end-line="50" selection-end-column="66" />
+          <folding>
+            <marker date="1482507431000" expanded="true" signature="1036:1144" ph="INSERT INTO t_user_1... " />
+            <marker date="1482507431000" expanded="true" signature="1402:1481" ph="UPDATE t_use... " />
+            <marker date="1482507431000" expanded="true" signature="1702:1750" ph="UPDATE t_use... " />
+            <marker date="1482507431000" expanded="true" signature="1943:1998" ph="SELECT * FRO... t_user_1" />
+            <marker date="1482507431000" expanded="true" signature="2349:2404" ph="SELECT * FRO... t_user_1" />
+            <marker date="1482507431000" expanded="true" signature="2840:2905" ph="SELECT * FRO... t_user_1" />
+            <marker date="1482507431000" expanded="true" signature="3017:3046" ph="SELECT COUNT... t_user_1" />
           </folding>
         </state>
       </provider>

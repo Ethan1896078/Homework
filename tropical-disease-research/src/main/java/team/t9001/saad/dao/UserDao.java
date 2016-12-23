@@ -46,9 +46,9 @@ public class UserDao extends BaseDao {
      * @return
      */
     public int modifyUser(User user){
-        String sql = "UPDATE t_user_1 SET username = ?, type = ?, status = ?, account = ?, password = ? " +
+        String sql = "UPDATE t_user_1 SET type = ?, status = ? " +
                 "WHERE user_id = ?";
-        return jdbc.update(sql, user.getUsername(), user.getType(), user.getStatus(), user.getAccount(), user.getPassword(), user.getUserId());
+        return jdbc.update(sql, user.getType(), user.getStatus(), user.getUserId());
     }
 
     /**

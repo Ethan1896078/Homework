@@ -67,7 +67,7 @@ public class UserService {
      * @return
      */
     public int modifyUser(User user) {
-        calcPassword(user);
+//        calcPassword(user);
         return userDao.modifyUser(user);
     }
 

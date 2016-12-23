@@ -107,9 +107,7 @@ public class ProjectController {
      */
     @ResponseBody
     @RequestMapping(value = UrlConstants.get_project_list, method = RequestMethod.GET)
-    public RequestStatus getProjectList(HttpServletRequest request, Page page
-
-    ){
+    public RequestStatus getProjectList(HttpServletRequest request, Page page){
         logger.debug("get project list, page:{}", page);
         RequestStatus requestStatus = new RequestStatus();
         if (!validatorService.validateLogin(requestStatus, request)) {
